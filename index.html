@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WM Test Report — Releases</title>
+<style>
+  :root {
+    --bg: #F5F6F9;
+    --card: #FFFFFF;
+    --card-border: #DFE3EA;
+    --card-shadow: rgba(30,41,59,0.06);
+    --text-1: #1E293B;
+    --text-2: #5A6578;
+    --text-3: #94A3B8;
+    --accent: #3B6DF0;
+    --accent-bg: rgba(59,109,240,0.08);
+    --passed: #16A34A;
+    --passed-bg: rgba(22,163,74,0.1);
+    --failed: #DC2626;
+    --failed-bg: rgba(220,38,38,0.1);
+    --bar-track: #EEF0F4;
+    --mono: ui-monospace, 'Cascadia Code', 'Source Code Pro', 'Menlo', monospace;
+    --toggle-bg: #E2E8F0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #13151A;
+      --card: #1C1F26;
+      --card-border: #2A2E37;
+      --card-shadow: rgba(0,0,0,0.3);
+      --text-1: #E2E8F0;
+      --text-2: #94A3B8;
+      --text-3: #64748B;
+      --accent: #6B8FF8;
+      --accent-bg: rgba(107,143,248,0.1);
+      --passed: #4ADE80;
+      --passed-bg: rgba(74,222,128,0.1);
+      --failed: #F87171;
+      --failed-bg: rgba(248,113,113,0.1);
+      --bar-track: #252830;
+      --toggle-bg: #2A2E37;
+    }
+  }
+  [data-theme="dark"] {
+    --bg: #13151A;
+    --card: #1C1F26;
+    --card-border: #2A2E37;
+    --card-shadow: rgba(0,0,0,0.3);
+    --text-1: #E2E8F0;
+    --text-2: #94A3B8;
+    --text-3: #64748B;
+    --accent: #6B8FF8;
+    --accent-bg: rgba(107,143,248,0.1);
+    --passed: #4ADE80;
+    --passed-bg: rgba(74,222,128,0.1);
+    --failed: #F87171;
+    --failed-bg: rgba(248,113,113,0.1);
+    --bar-track: #252830;
+    --toggle-bg: #2A2E37;
+  }
+  [data-theme="light"] {
+    --bg: #F5F6F9;
+    --card: #FFFFFF;
+    --card-border: #DFE3EA;
+    --card-shadow: rgba(30,41,59,0.06);
+    --text-1: #1E293B;
+    --text-2: #5A6578;
+    --text-3: #94A3B8;
+    --accent: #3B6DF0;
+    --accent-bg: rgba(59,109,240,0.08);
+    --passed: #16A34A;
+    --passed-bg: rgba(22,163,74,0.1);
+    --failed: #DC2626;
+    --failed-bg: rgba(220,38,38,0.1);
+    --bar-track: #EEF0F4;
+    --toggle-bg: #E2E8F0;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text-1);
+    min-height: 100vh;
+    padding: 32px 24px;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .page { max-width: 900px; margin: 0 auto; }
+
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 0 0 20px;
+    border-bottom: 1px solid var(--card-border);
+    margin-bottom: 24px;
+  }
+  .logo { width: 36px; height: 36px; border-radius: 6px; }
+  .title-block { display: flex; flex-direction: column; gap: 2px; }
+  .title { font-size: 20px; font-weight: 700; letter-spacing: -0.02em; }
+  .subtitle {
+    font-size: 11px;
+    color: var(--text-3);
+    font-family: var(--mono);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .meta { margin-left: auto; display: flex; align-items: center; gap: 12px; }
+  .count-badge {
+    font-size: 11px;
+    color: var(--text-2);
+    font-variant-numeric: tabular-nums;
+    font-family: var(--mono);
+  }
+  .theme-toggle {
+    width: 36px; height: 20px;
+    background: var(--toggle-bg);
+    border: none; border-radius: 10px;
+    cursor: pointer; position: relative;
+    transition: background 0.2s;
+  }
+  .theme-toggle::after {
+    content: '';
+    position: absolute;
+    top: 3px; left: 3px;
+    width: 14px; height: 14px;
+    border-radius: 50%;
+    background: var(--text-1);
+    transition: transform 0.2s;
+  }
+  [data-theme="dark"] .theme-toggle::after { transform: translateX(16px); }
+
+  .section-label {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-3);
+    margin-bottom: 12px;
+  }
+
+  .release-list { display: flex; flex-direction: column; gap: 10px; }
+
+  .release-row {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(160px, 1fr) auto auto auto auto;
+    gap: 20px;
+    align-items: center;
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    box-shadow: 0 1px 3px var(--card-shadow);
+    padding: 16px 18px;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  .release-row:hover {
+    border-color: var(--accent);
+    box-shadow: 0 2px 8px var(--card-shadow);
+  }
+  .release-link {
+    text-decoration: none;
+    color: inherit;
+    display: contents;
+  }
+  .release-row:active .release-arrow { transform: translateX(3px); }
+
+  .delete-btn {
+    background: none;
+    border: 1px solid transparent;
+    color: var(--text-3);
+    width: 26px;
+    height: 26px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.15s, background 0.15s, color 0.15s, border-color 0.15s;
+    padding: 0;
+    font-family: inherit;
+  }
+  .release-row:hover .delete-btn { opacity: 1; }
+  .delete-btn:hover {
+    background: var(--failed-bg, rgba(220,38,38,0.1));
+    color: var(--failed);
+    border-color: var(--failed);
+  }
+
+  /* Modal */
+  .modal-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .modal-backdrop.active { display: flex; }
+  .modal {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    padding: 22px 24px;
+    max-width: 460px;
+    width: 100%;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+  }
+  .modal-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text-1);
+    margin-bottom: 6px;
+  }
+  .modal-desc {
+    font-size: 12px;
+    color: var(--text-2);
+    line-height: 1.5;
+    margin-bottom: 14px;
+  }
+  .modal-cmd {
+    background: var(--bar-track);
+    border: 1px solid var(--card-border);
+    border-radius: 5px;
+    padding: 10px 12px;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text-1);
+    word-break: break-all;
+    margin-bottom: 14px;
+    user-select: all;
+  }
+  .modal-actions {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+  }
+  .btn {
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 7px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid var(--card-border);
+    background: none;
+    color: var(--text-2);
+    transition: border-color 0.15s, color 0.15s, background 0.15s;
+  }
+  .btn:hover { border-color: var(--text-2); color: var(--text-1); }
+  .btn-primary {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+  }
+  .btn-primary:hover { background: var(--accent); color: white; filter: brightness(1.1); }
+
+  .toast {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: var(--text-1);
+    color: var(--bg);
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    opacity: 0;
+    transition: opacity 0.2s, transform 0.2s;
+    pointer-events: none;
+    z-index: 200;
+  }
+  .toast.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .release-name {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--text-1);
+    font-family: var(--mono);
+  }
+  .release-date {
+    font-size: 11px;
+    color: var(--text-3);
+    font-family: var(--mono);
+    font-variant-numeric: tabular-nums;
+    margin-top: 3px;
+  }
+
+  .release-bar {
+    width: 200px;
+    height: 8px;
+    background: var(--bar-track);
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+  }
+  .release-bar-passed { background: var(--passed); height: 100%; }
+  .release-bar-failed { background: var(--failed); height: 100%; }
+
+  .release-stats {
+    font-size: 12px;
+    font-variant-numeric: tabular-nums;
+    font-family: var(--mono);
+    color: var(--text-2);
+    text-align: right;
+    min-width: 90px;
+  }
+  .release-stats .passed { color: var(--passed); font-weight: 700; }
+  .release-stats .failed { color: var(--failed); font-weight: 700; }
+  .release-stats .slash { color: var(--text-3); margin: 0 3px; }
+
+  .release-arrow {
+    color: var(--text-3);
+    font-size: 18px;
+    transition: transform 0.15s, color 0.15s;
+  }
+  .release:hover .release-arrow { color: var(--accent); transform: translateX(3px); }
+
+  .empty {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-3);
+    font-size: 14px;
+  }
+
+  @media (max-width: 640px) {
+    body { padding: 20px 14px; }
+    .release-row {
+      grid-template-columns: 1fr auto auto;
+      gap: 12px;
+    }
+    .release-bar { display: none; }
+    .delete-btn { opacity: 1; }
+  }
+</style>
+</head>
+<body>
+<script type="application/json" id="releases-data">[{"passed":1,"name":"release-03","failed":0,"total":1,"broken":0,"date":1784049668449,"skipped":0},{"passed":16,"name":"release-02","failed":1,"total":17,"broken":0,"date":1784048628261,"skipped":0},{"passed":16,"name":"release-01","failed":1,"total":17,"broken":0,"date":1784047576142,"skipped":0}]</script>
+
+<div class="page">
+  <div class="header">
+    <img class="logo" src="assets/custom-logo.png" alt="WM" onerror="this.style.display='none'" />
+    <div class="title-block">
+      <span class="title">WM Test Report</span>
+      <span class="subtitle">Release History</span>
+    </div>
+    <div class="meta">
+      <span class="count-badge" id="countBadge"></span>
+      <button class="theme-toggle" id="themeToggle" title="Toggle theme"></button>
+    </div>
+  </div>
+
+  <div class="section-label">All Releases</div>
+  <div class="release-list" id="releaseList"></div>
+</div>
+
+<div class="modal-backdrop" id="deleteModal">
+  <div class="modal">
+    <div class="modal-title">Delete release <span id="modalReleaseName" style="font-family:var(--mono);color:var(--failed);"></span>?</div>
+    <div class="modal-desc">GitHub Pages is a static site — deletion happens locally, then pushes to GitHub. Run this command in PowerShell:</div>
+    <div class="modal-cmd" id="modalCmd"></div>
+    <div class="modal-actions">
+      <button class="btn" id="modalCancel">Cancel</button>
+      <button class="btn btn-primary" id="modalCopy">Copy command</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+(function() {
+  var releases = JSON.parse(document.getElementById('releases-data').textContent);
+
+  // Theme toggle
+  var saved = localStorage.getItem('wm-dash-theme');
+  if (saved) document.documentElement.setAttribute('data-theme', saved);
+  document.getElementById('themeToggle').addEventListener('click', function() {
+    var current = document.documentElement.getAttribute('data-theme');
+    var next = current === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('wm-dash-theme', next);
+  });
+
+  function esc(s) { var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+  function fmtDate(ts) {
+    if (!ts) return '';
+    var d = new Date(ts);
+    return d.toLocaleDateString('en-GB', { day:'2-digit', month:'short', year:'numeric' }) +
+           ' · ' + d.toLocaleTimeString('en-GB', { hour:'2-digit', minute:'2-digit' });
+  }
+
+  var countBadge = document.getElementById('countBadge');
+  countBadge.textContent = releases.length + (releases.length === 1 ? ' release' : ' releases');
+
+  var list = document.getElementById('releaseList');
+  if (releases.length === 0) {
+    list.innerHTML = '<div class="empty">No releases yet. Run <code>generate-report.ps1</code> to publish your first release.</div>';
+    return;
+  }
+
+  releases.forEach(function(r) {
+    var passed = r.passed || 0;
+    var failed = (r.failed || 0) + (r.broken || 0);
+    var total = r.total || (passed + failed);
+    var passPct = total > 0 ? (passed / total * 100) : 0;
+    var failPct = total > 0 ? (failed / total * 100) : 0;
+
+    var row = document.createElement('div');
+    row.className = 'release-row';
+    row.innerHTML =
+      '<a class="release-link" href="releases/' + encodeURIComponent(r.name) + '/dashboard.html">' +
+        '<div>' +
+          '<div class="release-name">' + esc(r.name) + '</div>' +
+          '<div class="release-date">' + esc(fmtDate(r.date)) + '</div>' +
+        '</div>' +
+        '<div class="release-bar">' +
+          '<div class="release-bar-passed" style="width:' + passPct + '%"></div>' +
+          '<div class="release-bar-failed" style="width:' + failPct + '%"></div>' +
+        '</div>' +
+        '<div class="release-stats">' +
+          '<span class="passed">' + passed + '</span>' +
+          '<span class="slash">/</span>' +
+          (failed > 0 ? '<span class="failed">' + failed + ' fail</span>' : '<span>' + total + '</span>') +
+        '</div>' +
+        '<div class="release-arrow">›</div>' +
+      '</a>' +
+      '<button class="delete-btn" data-release="' + esc(r.name) + '" title="Delete release">×</button>';
+    list.appendChild(row);
+  });
+
+  // ── Delete modal ──
+  var modal = document.getElementById('deleteModal');
+  var modalName = document.getElementById('modalReleaseName');
+  var modalCmd = document.getElementById('modalCmd');
+  var toast = document.getElementById('toast');
+  var currentCmd = '';
+
+  function showToast(msg) {
+    toast.textContent = msg;
+    toast.classList.add('show');
+    setTimeout(function() { toast.classList.remove('show'); }, 2000);
+  }
+
+  list.addEventListener('click', function(e) {
+    var btn = e.target.closest('.delete-btn');
+    if (!btn) return;
+    e.preventDefault();
+    e.stopPropagation();
+    var name = btn.dataset.release;
+    currentCmd = '.\\delete-release.ps1 ' + name;
+    modalName.textContent = name;
+    modalCmd.textContent = currentCmd;
+    modal.classList.add('active');
+  });
+
+  document.getElementById('modalCancel').addEventListener('click', function() {
+    modal.classList.remove('active');
+  });
+
+  modal.addEventListener('click', function(e) {
+    if (e.target === modal) modal.classList.remove('active');
+  });
+
+  document.getElementById('modalCopy').addEventListener('click', function() {
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(currentCmd).then(function() {
+        showToast('Command copied — paste in PowerShell to delete');
+        modal.classList.remove('active');
+      }).catch(function() {
+        showToast('Copy failed — select and copy manually');
+      });
+    } else {
+      // Fallback for insecure contexts
+      var ta = document.createElement('textarea');
+      ta.value = currentCmd;
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand('copy');
+        showToast('Command copied — paste in PowerShell to delete');
+        modal.classList.remove('active');
+      } catch(err) {
+        showToast('Copy failed — select and copy manually');
+      }
+      document.body.removeChild(ta);
+    }
+  });
+
+  // Escape closes modal
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      modal.classList.remove('active');
+    }
+  });
+})();
+</script>
+</body>
+</html>
