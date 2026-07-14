@@ -1,1 +1,0 @@
-IllegalStateException: Missing secret 'user.disabled.username'. Set via -Duser.disabled.username, config/local.properties, or env var USER_DISABLED_USERNAME
