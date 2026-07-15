@@ -1,1 +1,1 @@
-﻿{"reportName":"WM TEST REPORT - release-01","testRuns":[],"statistic":{"failed":0,"broken":0,"skipped":0,"passed":17,"unknown":0,"total":17},"time":{"start":1784091036798,"stop":1784092233127,"duration":1196329,"minDuration":350,"maxDuration":90377,"sumDuration":327365}}
+﻿{"reportName":"WM TEST REPORT - release-01","testRuns":[],"statistic":{"failed":0,"broken":1,"skipped":0,"passed":16,"unknown":0,"total":17},"time":{"start":1784091912958,"stop":1784096829096,"duration":4916138,"minDuration":350,"maxDuration":90377,"sumDuration":363087}}
