@@ -1,2 +1,0 @@
-GET http://unearthtest-nonprod-discoveryapi.blackocean-b19cf4b1.australiaeast.azurecontainerapps.io/api/search/corpora
-Authorization: (none)
