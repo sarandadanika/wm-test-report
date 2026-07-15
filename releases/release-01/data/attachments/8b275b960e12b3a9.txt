@@ -1,1 +1,0 @@
-XSS in email: <script>alert(1)</script>@test.com

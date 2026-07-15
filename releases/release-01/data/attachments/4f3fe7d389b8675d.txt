@@ -1,4 +1,0 @@
-IdP domain: xpreshonnonprod.ciamlogin.com ✓
-client_id present ✓
-redirect_uri present ✓
-PKCE code_challenge present ✓

@@ -1,2 +1,0 @@
-Contains 'stack trace': false
-Contains 'SQLException': false
