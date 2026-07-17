@@ -1,1 +1,1 @@
-[{"uid":"ec56571ee049ef79","name":"uiTeardown","time":{"start":1784312506628,"stop":1784312506629,"duration":1},"status":"broken","severity":"normal"},{"uid":"7dc8820752d94fe7","name":"walkWizardAndDumpFields","time":{"start":1784312351552,"stop":1784312506510,"duration":154958},"status":"broken","severity":"normal"}]
+[{"uid":"f33078b58c6f69e8","name":"walkWizardAndDumpFields","time":{"start":1784312675036,"stop":1784312720263,"duration":45227},"status":"passed","severity":"normal"}]
