@@ -1,2 +1,2 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Fri Jul 17 15:17:01 IST 2026","Fri Jul 17 15:17:18 IST 2026","17506","Default Suite","xpreshon-hybrid-framework","com.wildmouse.xpreshon.tests.e2e.TokenStorageProbeTest","com.wildmouse.xpreshon.tests.e2e.TokenStorageProbeTest","dumpStorageKeys","dumpStorageKeys",""
+"passed","Fri Jul 17 23:04:56 IST 2026","Fri Jul 17 23:05:40 IST 2026","43646","Default Suite","xpreshon-hybrid-framework","com.wildmouse.xpreshon.tests.e2e.ArrangementWizardProbeTest","com.wildmouse.xpreshon.tests.e2e.ArrangementWizardProbeTest","walkWizardAndDumpFields","walkWizardAndDumpFields",""
