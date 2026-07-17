@@ -1,2 +1,2 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Sat Jul 18 00:00:24 IST 2026","Sat Jul 18 00:01:20 IST 2026","56139","Surefire suite","Surefire test","com.wildmouse.xpreshon.tests.e2e.ArrangementWizardProbeTest","com.wildmouse.xpreshon.tests.e2e.ArrangementWizardProbeTest","createDraftAndCaptureGuid","createDraftAndCaptureGuid",""
+"passed","Sat Jul 18 00:06:10 IST 2026","Sat Jul 18 00:07:15 IST 2026","65050","Surefire suite","Surefire test","com.wildmouse.xpreshon.tests.e2e.ArrangementWizardProbeTest","com.wildmouse.xpreshon.tests.e2e.ArrangementWizardProbeTest","createDraftAndCaptureGuid","createDraftAndCaptureGuid",""
