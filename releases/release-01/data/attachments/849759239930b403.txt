@@ -1,3 +1,0 @@
-On login page: true
-On authenticated page: false
-Session restored: false
