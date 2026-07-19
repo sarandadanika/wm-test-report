@@ -1,0 +1,3 @@
+Legal name: AUTHZ Test 1784458086143
+GUID: ef372034-d9b9-4c9e-874f-d69f5dfe46a7
+URL: https://test.xpreshon.unearth.ai/app/food-safety-plans/approved-arrangement/ef372034-d9b9-4c9e-874f-d69f5dfe46a7?returnTo=/app/food-safety-plans
