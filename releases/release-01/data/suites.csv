@@ -1,2 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"unknown","Sun Jul 19 23:54:52 IST 2026","Sun Jul 19 23:54:52 IST 2026","4","Command line suite","Command line test","com.wildmouse.xpreshon.tests.security.authz.IdorAuthzTest","com.wildmouse.xpreshon.tests.security.authz.IdorAuthzTest","cannotAccessOtherUsersArrangement","AUTHZ-004 / ADO-8617","A standard user cannot access another tenant's arrangement by ID (IDOR)"
