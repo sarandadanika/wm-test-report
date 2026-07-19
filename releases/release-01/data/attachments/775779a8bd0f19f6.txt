@@ -1,2 +1,0 @@
-Sign-in prompt visible: true
-Protected content (Feed tab) visible: false
