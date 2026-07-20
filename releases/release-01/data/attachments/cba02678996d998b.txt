@@ -1,6 +1,6 @@
 Encryption key present in localStorage: true
 Access token present in localStorage: true
 Decrypted using only client-side-available data: true
-Recovered plaintext looks like a JWT: true (length 1736 chars)
+Recovered plaintext looks like a JWT: true (length 1731 chars)
 
 Implication: if decryption succeeded, any JS running on this origin (XSS, a compromised dependency, a malicious extension) can recover this user's real OAuth tokens using nothing but the standard Web Crypto API.
