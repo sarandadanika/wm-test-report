@@ -1,1 +1,1 @@
-[{"uid":"72b0b0b6a8142d0","name":"E2E-001","time":{"start":1784488546933,"stop":1784488597466,"duration":50533},"status":"passed","severity":"normal"}]
+[{"uid":"4de86505739d1cfd","name":"SESSION-001","time":{"start":1784513060984,"stop":1784513096374,"duration":35390},"status":"broken","severity":"normal"},{"uid":"6cd1b0d79f1abd99","name":"SESSION-002","time":{"start":1784513021789,"stop":1784513058720,"duration":36931},"status":"broken","severity":"normal"}]
