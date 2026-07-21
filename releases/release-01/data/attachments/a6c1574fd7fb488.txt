@@ -1,4 +1,0 @@
-Authenticated before clearing: true
-Sign In shown after clearing: true
-Home (Feed) still visible after clearing: false
-Re-authentication required: true

@@ -1,5 +1,0 @@
-Refresh token captured while authenticated: true
-Logged out via UI: true
-Replayed captured refresh token against Entra's token endpoint: HTTP 400
-New access token issued: false
-Token rejected after logout: true

@@ -1,4 +1,0 @@
-Access token captured while authenticated: true
-Logged out via UI: true
-Replayed captured access token against the real API: HTTP 200
-Token rejected after logout: false
