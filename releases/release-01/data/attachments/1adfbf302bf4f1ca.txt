@@ -1,1 +1,0 @@
-https://xpreshonnonprod.ciamlogin.com/1b38a287-0a75-4c8b-8139-774b7ac3f187/oauth2/v2.0/logout?post_logout_redirect_uri=https%3A%2F%2Ftest.xpreshon.unearth.ai&client_id=95feb79a-811f-43e8-86ee-b63a1b038833&id_token_hint=REDACTED&logout_hint=danika%40wildmouse.com
