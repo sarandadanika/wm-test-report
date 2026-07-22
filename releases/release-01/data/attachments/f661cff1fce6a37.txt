@@ -1,5 +1,0 @@
-Param 'limit' -> HTTP 400, reflected raw: true, reflected encoded: false
-Param 'establishmentAbn' -> HTTP 200, reflected raw: false, reflected encoded: false
-Param 'solutionId' -> HTTP 200, reflected raw: false, reflected encoded: false
-
-Any reflection observed across candidate parameters: true
