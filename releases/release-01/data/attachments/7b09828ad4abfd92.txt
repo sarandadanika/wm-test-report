@@ -1,0 +1,3 @@
+Probe payload: <img src=x onerror=console.log('XSS-PROBE-FIRED')>
+Value returned by the API: <img src=x onerror=console.log('XSS-PROBE-FIRED')>
+Returned value is unmodified from the raw payload: true

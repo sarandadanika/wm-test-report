@@ -1,0 +1,3 @@
+Raw payload: <img src=x onerror=console.log('XSS-PROBE-FIRED')>
+Value returned by GET /forms/submissions: <img src=x onerror=console.log('XSS-PROBE-FIRED')>
+Returned value is HTML-encoded (no raw '<' or '>'): false
