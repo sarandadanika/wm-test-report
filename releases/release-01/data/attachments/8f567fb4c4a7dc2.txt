@@ -1,0 +1,3 @@
+Findings by severity — Critical=0, High=0, Medium=0, Low=5, Info=4
+
+No findings at or above HIGH.
