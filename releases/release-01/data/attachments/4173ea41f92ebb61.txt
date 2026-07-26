@@ -1,0 +1,42 @@
+
+C:\Program Files\ZAP\Zed Attack Proxy>if exist "C:\Users\USER\ZAP\.ZAP_JVM.properties" (set /p jvmopts= 0<"C:\Users\USER\ZAP\.ZAP_JVM.properties" )  else (set jvmopts=-Xmx512m ) 
+
+C:\Program Files\ZAP\Zed Attack Proxy>java -Xmx512m -jar zap-2.17.0.jar -cmd -autorun C:\Users\USER\AppData\Local\Temp\zap-plan-13730692452412767776.yaml 
+Job replacer set deleteAllRules = true
+Job replacer set description = Authorization bearer token
+Job replacer set matchType = REQ_HEADER
+Job replacer set matchString = Authorization
+Job replacer set matchRegex = false
+Job replacer set replacementString = Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IkRJN0xVTHFndkNqdEF5WUszWEFwRDBzVUVLbyJ9.eyJhdWQiOiIyMzQ0NWJlNi1kZmMwLTQ3OWMtYmZmYy1kOGVlZTEzODRlODUiLCJpc3MiOiJodHRwczovLzFiMzhhMjg3LTBhNzUtNGM4Yi04MTM5LTc3NGI3YWMzZjE4Ny5jaWFtbG9naW4uY29tLzFiMzhhMjg3LTBhNzUtNGM4Yi04MTM5LTc3NGI3YWMzZjE4Ny92Mi4wIiwiaWF0IjoxNzg1MDk1NTA2LCJuYmYiOjE3ODUwOTU1MDYsImV4cCI6MTc4NTEwMDMzOSwiYWlvIjoiQVhRQWkvOGNBQUFBd2Y0TWRnYm95emo5UXpQTURQWHVPekc3dUU4cndIMkZIYnZtWXRUejU3ZTNRQ0w0d3BmVTUzWmVjcUEyTjB2bXBqQkUzVFYrTk8xUjVBSHNoMS8yYWhYNzFT?IiwidXRpIjoiRzM3eFBHQW03VXk5OGNfQ0JDc0NBQSIsInZlciI6IjIuMCIsInhtc19mdGQiOiJMQjVTWHdobFBKSkg5bEVKQmpkdnR0Z3hrQlBIa0xIYVhqclVFRkF2RGE4QllYVnpkSEpoYkdsaFpXRnpkQzFrYzIxeiJ9.cbrqA2-5tToPO7e0vuzUddLOw9bGWm58m5yKOrxS2l9rJFneDmvCLn6JSUth16dTpz1XY-bL4KFwP78NlozRLG71vTkz5pYTRlR-gicexGLM-zhukPTwl13073gBJwDCf8K8hKdW5-HvonPTfLirYhq71fl9P3hW6MpwUeF0QsJGwWQI_drqRZFKACNbOMmqWsema525dpgXU9LTYvnyL_2dz8bRlGPtWq4plC84dHEj_ABzDkne-652_w7RG_hTDW4w2ywEyc4Za-OTrTo2374G_8u4JDD-PHjP2EoE5g_q12Ohs-itB_Y4NUbqK_XpvhO8WXv6ORjuZh9d2v2vYg
+Job replacer set tokenProcessing = false
+Job openapi set apiUrl = https://unearthtest-nonprod-discoveryapi.blackocean-b19cf4b1.australiaeast.azurecontainerapps.io/swagger/all/swagger.json
+Job openapi set targetUrl = https://test.xpreshon.unearth.ai/api/discovery-test-api
+Job openapi set context = xpreshon
+Job passiveScan-wait set maxDuration = 5
+Job activeScan set context = xpreshon
+Job activeScan set maxScanDurationInMins = 1
+Job report set template = traditional-html
+Job report set reportDir = C:/Users/USER/Downloads/xpreshon-hybrid-framework/xpf/reports
+Job report set reportFile = xpreshon-full
+Job report set reportTitle = Xpreshon DAST-001 � Full API Scan
+Job report set template = sarif-json
+Job report set reportDir = C:/Users/USER/Downloads/xpreshon-hybrid-framework/xpf/reports
+Job report set reportFile = xpreshon-full
+Job replacer set deleteAllRules = true
+Job replacer started
+Existing Replace rules deleted
+Job replacer finished, time taken: 00:00:00
+Job openapi started
+Job openapi added 20 URLs
+Job openapi finished, time taken: 00:00:15
+Job passiveScan-wait started
+Job passiveScan-wait finished, time taken: 00:00:02
+Job activeScan started
+Job activeScan finished, time taken: 00:01:01
+Job report started
+Job report generated report C:\Users\USER\Downloads\xpreshon-hybrid-framework\xpf\reports\xpreshon-full.html
+Job report finished, time taken: 00:00:00
+Job report started
+Job report generated report C:\Users\USER\Downloads\xpreshon-hybrid-framework\xpf\reports\xpreshon-full.json
+Job report finished, time taken: 00:00:00
+Automation plan succeeded!
