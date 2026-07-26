@@ -1,5 +1,0 @@
-
-C:\Users\USER\Downloads\xpreshon-hybrid-framework\xpf>if exist "C:\Users\USER\ZAP\.ZAP_JVM.properties" (set /p jvmopts= 0<"C:\Users\USER\ZAP\.ZAP_JVM.properties" )  else (set jvmopts=-Xmx512m ) 
-
-C:\Users\USER\Downloads\xpreshon-hybrid-framework\xpf>java -Xmx512m -jar zap-2.17.0.jar -cmd -autorun C:\Users\USER\Downloads\xpreshon-hybrid-framework\xpf\zap\xpreshon-auth-scan.yaml 
-Error: Unable to access jarfile zap-2.17.0.jar
