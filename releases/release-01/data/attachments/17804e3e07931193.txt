@@ -1,7 +1,7 @@
 
 C:\Program Files\ZAP\Zed Attack Proxy>if exist "C:\Users\USER\ZAP\.ZAP_JVM.properties" (set /p jvmopts= 0<"C:\Users\USER\ZAP\.ZAP_JVM.properties" )  else (set jvmopts=-Xmx512m ) 
 
-C:\Program Files\ZAP\Zed Attack Proxy>java -Xmx512m -jar zap-2.17.0.jar -cmd -autorun C:\Users\USER\AppData\Local\Temp\zap-plan-15972620628901663845.yaml 
+C:\Program Files\ZAP\Zed Attack Proxy>java -Xmx512m -jar zap-2.17.0.jar -cmd -autorun C:\Users\USER\AppData\Local\Temp\zap-plan-686198851358990394.yaml 
 Job replacer set deleteAllRules = true
 Job replacer set description = Authorization bearer token
 Job replacer set matchType = REQ_HEADER
@@ -26,9 +26,9 @@ Existing Replace rules deleted
 Job replacer finished, time taken: 00:00:00
 Job openapi started
 Job openapi added 20 URLs
-Job openapi finished, time taken: 00:00:16
+Job openapi finished, time taken: 00:00:17
 Job passiveScan-wait started
-Job passiveScan-wait finished, time taken: 00:00:01
+Job passiveScan-wait finished, time taken: 00:00:02
 Job report started
 Job report generated report C:\Users\USER\Downloads\xpreshon-hybrid-framework\xpf\reports\xpreshon-baseline.html
 Job report finished, time taken: 00:00:00
