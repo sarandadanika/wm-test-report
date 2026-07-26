@@ -1,1 +1,1 @@
-{"total":1,"items":[{"uid":"a3ebd3885f734b5e692af432fe3ee17b","name":"Command line suite","statistic":{"failed":3,"broken":0,"skipped":0,"passed":2,"unknown":0,"total":5}}]}
+{"total":1,"items":[{"uid":"7c3f4345855e73277850205e5f71140b","name":"DAST-Scan","statistic":{"failed":0,"broken":1,"skipped":2,"passed":0,"unknown":0,"total":3}}]}
