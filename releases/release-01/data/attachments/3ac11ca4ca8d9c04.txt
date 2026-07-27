@@ -1,5 +1,0 @@
-
-C:\Program Files\ZAP\Zed Attack Proxy>if exist "C:\Users\USER\ZAP\.ZAP_JVM.properties" (set /p jvmopts= 0<"C:\Users\USER\ZAP\.ZAP_JVM.properties" )  else (set jvmopts=-Xmx512m ) 
-
-C:\Program Files\ZAP\Zed Attack Proxy>java -Xmx512m -jar zap-2.17.0.jar -cmd -autorun C:\Users\USER\AppData\Local\Temp\zap-plan-2055540305726372637.yaml 
-The home directory is already in use. Ensure no other ZAP instances are running with the same home directory: C:\Users\USER\ZAP\
