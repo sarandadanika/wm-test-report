@@ -1,0 +1,3 @@
+Real DOM <img src=x> element found on page: false
+Probe title present as plain (canvas-painted) accessibility text: false
+Payload rendered as inert text rather than live HTML: true
