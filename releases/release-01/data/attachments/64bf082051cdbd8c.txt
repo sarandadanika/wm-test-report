@@ -1,0 +1,6 @@
+
+C:\Program Files\ZAP\Zed Attack Proxy>if exist "C:\Users\USER\ZAP\.ZAP_JVM.properties" (set /p jvmopts= 0<"C:\Users\USER\ZAP\.ZAP_JVM.properties" )  else (set jvmopts=-Xmx512m ) 
+
+C:\Program Files\ZAP\Zed Attack Proxy>java -Xmx512m -jar zap-2.17.0.jar -cmd -autorun C:\Users\USER\AppData\Local\Temp\zap-plan-4287939523413601821.yaml 
+Failed to start the main proxy: java.net.BindException Address already in use: bind
+Terminating ZAP, unable to start the main proxy.
