@@ -1,0 +1,254 @@
+
+C:\Program Files\ZAP\Zed Attack Proxy>if exist "C:\Users\USER\ZAP\.ZAP_JVM.properties" (set /p jvmopts= 0<"C:\Users\USER\ZAP\.ZAP_JVM.properties" )  else (set jvmopts=-Xmx512m ) 
+
+C:\Program Files\ZAP\Zed Attack Proxy>java -Xmx512m -jar zap-2.17.0.jar -dir C:\Users\USER\AppData\Local\Temp\zap-home-2496507108264948742 -autorun C:\Users\USER\AppData\Local\Temp\zap-plan-17218655887790297103.yaml 
+931 [main] INFO  org.parosproxy.paros.Constant - Copying default configuration to C:\Users\USER\AppData\Local\Temp\zap-home-2496507108264948742\config.xml
+1229 [main] INFO  org.parosproxy.paros.Constant - Creating directory C:\Users\USER\AppData\Local\Temp\zap-home-2496507108264948742\session
+1231 [main] INFO  org.parosproxy.paros.Constant - Creating directory C:\Users\USER\AppData\Local\Temp\zap-home-2496507108264948742\dirbuster
+1233 [main] INFO  org.parosproxy.paros.Constant - Creating directory C:\Users\USER\AppData\Local\Temp\zap-home-2496507108264948742\fuzzers
+1233 [main] INFO  org.parosproxy.paros.Constant - Creating directory C:\Users\USER\AppData\Local\Temp\zap-home-2496507108264948742\plugin
+1389 [main] INFO  org.zaproxy.zap.GuiBootstrap - ZAP 2.17.0 started 27/07/2026, 11:14:19 with home: C:\Users\USER\AppData\Local\Temp\zap-home-2496507108264948742\ cores: 8 maxMemory: 512 MB
+3099 [AWT-EventQueue-0] INFO  org.parosproxy.paros.view.View - Initialising View
+7961 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.control.ExtensionFactory - Installed add-ons: [[id=alertFilters, version=26.0.0], [id=ascanrules, version=78.0.0], [id=authhelper, version=0.34.0], [id=automation, version=0.58.0], [id=bruteforce, version=20.0.0], [id=callhome, version=0.20.0], [id=client, version=0.20.0], [id=commonlib, version=1.39.0], [id=database, version=0.9.0], [id=diff, version=18.0.0], [id=directorylistv1, version=9.0.0], [id=domxss, version=23.0.0], [id=encoder, version=1.8.0], [id=exim, version=0.16.0], [id=formhandler, version=6.8.0], [id=fuzz, version=13.16.0], [id=gettingStarted, version=20.0.0], [id=graaljs, version=0.12.0], [id=graphql, version=0.29.0], [id=help, version=22.0.0], [id=hud, version=0.19.0], [id=insights, version=0.0.1], [id=invoke, version=17.0.0], [id=network, version=0.25.0], [id=oast, version=0.24.0], [id=onlineMenu, version=15.0.0], [id=openapi, version=48.0.0], [id=postman, version=0.9.0], [id=pscan, version=0.6.0], [id=pscanrules, version=70.0.0], [id=quickstart, version=53.0.0], [id=replacer, version=21.0.0], [id=reports, version=0.43.0], [id=requester, version=7.9.0], [id=retest, version=0.11.0], [id=retire, version=0.52.0], [id=reveal, version=10.0.0], [id=scanpolicies, version=0.7.0], [id=scripts, version=45.17.0], [id=selenium, version=15.43.0], [id=sequence, version=9.0.0], [id=soap, version=29.0.0], [id=spider, version=0.18.0], [id=spiderAjax, version=23.29.0], [id=tips, version=16.0.0], [id=webdriverwindows, version=170.0.0], [id=websocket, version=35.0.0], [id=zest, version=48.11.0]]
+7973 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.control.ExtensionFactory - Loading extensions
+8816 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.network.internal.TlsUtils - Using supported SSL/TLS protocols: [TLSv1.2, TLSv1.3]
+9357 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.control.ExtensionFactory - Extensions loaded
+10629 [ZAP-BootstrapGUI] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:hsqldb:file:C:/Users/USER/AppData/Local/Temp/zap-home-2496507108264948742/session/untitled1 (HSQL Database Engine 2.7)
+10709 [ZAP-BootstrapGUI] INFO  org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory - Schema history table "PUBLIC"."AUTHHELPER_FLYWAY_SCHEMA_HISTORY" does not exist yet
+10709 [ZAP-BootstrapGUI] INFO  org.flywaydb.core.internal.command.DbValidate - Successfully validated 6 migrations (execution time 00:00.026s)
+10739 [ZAP-BootstrapGUI] INFO  org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."AUTHHELPER_FLYWAY_SCHEMA_HISTORY" with baseline ...
+10787 [ZAP-BootstrapGUI] INFO  org.flywaydb.core.internal.command.DbBaseline - Successfully baselined schema with version: 0
+10815 [ZAP-BootstrapGUI] INFO  org.flywaydb.core.internal.command.DbMigrate - Current version of schema "PUBLIC": 0
+10858 [ZAP-BootstrapGUI] INFO  org.flywaydb.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "1 - Create tables"
+10903 [ZAP-BootstrapGUI] INFO  org.flywaydb.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "2 - Create storage tables"
+10939 [ZAP-BootstrapGUI] INFO  org.flywaydb.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "3 - Improve diags"
+10961 [ZAP-BootstrapGUI] INFO  org.flywaydb.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "4 - Web element selector"
+10978 [ZAP-BootstrapGUI] INFO  org.flywaydb.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "5 - Af plan"
+10995 [ZAP-BootstrapGUI] INFO  org.flywaydb.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version "6 - Auth report data"
+11018 [ZAP-BootstrapGUI] INFO  org.flywaydb.core.internal.command.DbMigrate - Successfully applied 6 migrations to schema "PUBLIC", now at version v6 (execution time 00:00.041s)
+12560 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Auto-update Extension - Allows ZAP to check for updates
+12700 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Options Extension - Options Extension
+13261 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Edit Menu Extension - Edit Menu Extension
+13272 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing API Extension - Provides a rest based API for controlling and accessing ZAP
+13339 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing History Extension - History Extension
+13576 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing ExtensionReveal - Show hidden fields and enable disabled fields
+13592 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Search Extension - Search messages for strings and regular expressions
+13728 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Breakpoint Extension - Allows you to intercept and modify requests and responses
+13880 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Passive Scan Extension - Passive scanner
+13880 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Alerts Extension - Allows you to view and manage alerts
+14311 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Active Scan Extension - Active scanner, heavily based on the original Paros active scanner, but with additional tests added
+14474 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing ExtensionSequence - ExtensionSequence
+14488 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Standard Menus Extension - A set of common popup menus for miscellaneous tasks
+14511 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing ExtensionBruteForce - Forced browsing of files and directories using code from the OWASP DirBuster tool
+14600 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Compare Extension - Compares 2 sessions and generates an HTML file showing the differences
+14617 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing ExtensionInvoke - Invoke external applications passing context related information such as URLs and parameters
+14659 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Anti-CSRF Extension - Handles anti cross site request forgery (CSRF) tokens
+14704 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Authentication Extension - Authentication Extension
+14720 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.authentication.ExtensionAuthentication - Loaded authentication method types: [Form-based Authentication, HTTP/NTLM Authentication, Manual Authentication, Script-based Authentication, JSON-based Authentication]
+14739 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Users Extension - Users Extension
+14745 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Parameters Extension - Summarise and analyse FORM and URL parameters as well as cookies
+14773 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Script Extension - Script integration
+14798 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing ExtensionScripts - Scripting console, supports all JSR 223 scripting languages
+15089 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Forced User Extension - Forced User Extension
+15092 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing HTTP Sessions Extension - Extension handling HTTP sessions
+15176 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing ExtensionZest - Zest is a specialized scripting language, originally, from Mozilla specifically designed to be used in security tools
+15596 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing ExtensionDiff - ExtensionDiff
+15605 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing HTTP Panel Post Table View Extension - HTTP Panel Post Table View Extension
+15620 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Encoder Addon - Adds support for scriptable encoders to ZAP.
+15747 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Session Management Extension - Session Management Extension
+15767 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.sessions.ExtensionSessionManagement - Loaded session management method types: [Cookie-based Session Management, HTTP Authentication Session Management, Script-based Session Management]
+15767 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing HTTP Panel Form Table View Extension - HTTP Panel Form Table View Extension
+15792 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing WebSockets Support - Capture messages from WebSockets with the ability to set breakpoints.
+15945 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing SOAP/WSDL Support - Allows you to import a WSDL file containing operations which ZAP will access, adding them to the Sites tree.
+15954 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Core UI Extension - Core UI related functionality.
+15959 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Authorization Extension - Authorization Extension
+15986 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Requester - Allows to manually edit and send messages.
+16210 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing AJAX Spider - AJAX Spider, uses Crawljax
+16383 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing WebDriver Provider - Provides WebDrivers to control several browsers using Selenium and includes HtmlUnit browser.
+16962 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Refresh Sites Tree Extension - Adds menu item to refresh the Sites tree
+16977 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Help Extension - ZAP User Guide
+17199 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Call Home - Handles all of the calls to ZAP services
+17211 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Network Extension - Provides core networking capabilities.
+18031 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.network.ConnectionOptions - Unsafe SSL/TLS renegotiation disabled.
+18031 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Extension Configuration Extension - Allows you to configure which extensions are loaded when ZAP starts
+18149 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Combined HTTP Panels Extension - Combined HTTP Panels Extension
+18190 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing HTTP Panel Hex View Extension - HTTP Panel Hex View Extension
+18254 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing HTTP Panel Image View Extension - HTTP Panel Image View Extension
+18271 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing HTTP Panel Query Table View Extension - HTTP Panel Query Table View Extension
+18317 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing HTTP Panel Syntax Highlighter View Extension - HTTP Panel Syntax Highlighter View Extension
+18492 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Keyboard Configuration Extension - Adds support for configurable keyboard shortcuts for all of the ZAP menus.
+18513 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Scanner Rule Configuration Extension - Active and passive rule configuration
+18529 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Statistics Extension - Statistics
+18544 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.stats.ExtensionStats - Start recording in memory stats
+18545 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Custom Pages Extension - Custom Pages Definition
+18559 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing ExtensionAlertFilters - Context alert rules filter
+18578 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Alert Filters Automation - Alert Filters Automation Framework Integration
+18594 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Active Scan Rules - Release status active scan rules
+18594 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Authentication Helper - Authentication Helper
+18846 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Client Spider Browser Based Authentication Support - Enables browser based authentication when performing an authenticated Client Spider scan.
+18860 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Authentication Helper Reports - Authentication Helper Reports
+18864 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing AJAX Spider Browser Based Authentication Support - Enables browser based authentication when performing an authenticated AJAX Spider scan.
+18888 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Automation Framework - Provides functionality to simplify using ZAP in an automated manner
+18958 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing ExtensionClientIntegration - Client Side Integration
+19133 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Client Spider Automation - Client Spider Automation Framework Integration
+19155 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Client Zest Script Recording Support - Allows recording client events as Zest scripts.
+19173 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Common Library - A library of shared functionality
+19205 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Database Extension - Provides databases and persistence capabilities.
+19205 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing ExtensionDomXSS - DOM XSS Active Scan Rule
+19300 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Import/Export - Import and Export functionality supporting multiple formats.
+19326 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Import/Export Automation - Import/Export Automation Framework Integration
+19334 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing ExtensionFormHandler - This extension allows a user to change the default values used for generated content (e.g. spiders, importers).
+19379 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Advance Fuzzer - Provides the foundation for concrete message types (for example, HTTP, WebSockets) expose fuzzer implementations.
+19396 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing HTTP Fuzzer - Allows to fuzz HTTP messages.
+19487 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing ExtensionGettingStarted - The ZAP Getting Started Guide
+19496 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing GraalVM JavaScript Engine Extension - Provides the GraalVM JavaScript engine for ZAP scripting.
+19568 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing ExtensionGraphQl - Allows you to inspect and attack GraphQL endpoints.
+19597 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing GraphQL Automation - GraphQL Automation Framework Integration
+19609 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing GraphQL Spider - GraphQL Spider Integration
+19619 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing ExtensionHUD - Heads Up Display
+20009 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing ExtensionHUDlaunch - ExtensionHUDlaunch
+20013 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing ExtensionInsights - Insights Extension
+20053 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Alert Filters Automation - Alert Filters Automation Framework Integration
+20086 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Insights Reports Extension - Adds Insights to the report data
+20097 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Out-of-band Application Security Testing - Adds Out-of-band Application Security Testing functionality.
+20534 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing OAST Scripts - Adds OAST scripts.
+20537 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing ExtensionOnlineMenu - The Online menu links
+20548 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing OpenAPI Import - Allows you to spider and import OpenAPI (Swagger) definitions 
+20548 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing OpenAPI Automation - OpenAPI Automation Framework Integration
+20564 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing OpenAPI Spider - OpenAPI Spider Integration
+20573 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Postman Import - Allows you to spider and import Postman collections
+20582 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Postman Automation - Postman Automation Framework Integration
+20582 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Passive Scanner Extension - Provides core passive scanning capabilities.
+20645 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Passive Scanner Automation Framework Extension - Provides jobs and result data related to the passive scanner.
+20658 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Passive Scan Rules - Release status passive scan rules.
+20659 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Quick Start panel  - Adds the Quick Start panel for scanning and exploring applications
+20860 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Quick Start Ajax Spider integration - Add the option to use the Ajax Spider in the Quick Start scan
+20876 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Quick Start HUD Integration - HUD integration for the quick start panel
+20881 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Quick Start Browser Launcher - Launch browsers preset proxying through ZAP
+20978 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Quick Start Spider Integration - Adds the option to use the traditional Spider in the Quick Start scan.
+20986 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Match and Replace - Easy way to replace strings in requests and responses
+21002 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Replacer Automation - Replacer Automation Framework Integration
+21016 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Report Generator - Templated and themed report generation functionality
+21031 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Report Generation Automation Integration - Report Generation Automation Integration
+21031 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Retest - Facilitates the verification of presence/absence of certain alerts.
+21054 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Scripts Automation Framework Integration - Scripts Automation
+21068 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Sequence Automation - Sequence Automation Framework Integration
+21095 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing SOAP Automation - SOAP Automation Framework Integration
+21107 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing SOAP Spider - SOAP Spider Integration
+21117 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Spider Extension - Spider used for automatically finding URIs on a site.
+21274 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Spider Automation - Spider Automation Integration
+21289 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing Ajax Spider Automation - Ajax Spider Automation Framework Integration
+21304 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing ExtensionTipsAndTricks - Tips and Tricks
+21312 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing WebSocket Fuzzer - Allows to fuzz WebSocket messages.
+21329 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.extension.ExtensionLoader - Initializing WebSocket Message Editor - Provides the WebSocket Message Editor dialogues.
+21497 [ZAP-BootstrapGUI] INFO  org.zaproxy.zap.extension.keyboard.ExtensionKeyboard - Initializing keyboard shortcuts
+21775 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.oast.services.callback.CallbackService - Started callback service on 0.0.0.0:55426
+21788 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Authentication Request Identified
+21788 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Session Management Response Identified
+21788 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Verification Request Identified
+21858 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Anti-clickjacking Header
+21858 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Application Error Disclosure
+21862 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Big Redirect Detected (Potential Sensitive Information Leak)
+21866 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Re-examine Cache-control Directives
+21866 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Charset Mismatch
+21876 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Content Security Policy (CSP) Header Not Set
+21879 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: CSP
+21879 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Content-Type Header Missing
+21879 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Cookie No HttpOnly Flag
+21879 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Loosely Scoped Cookie
+21895 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Cookie without SameSite Attribute
+21899 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Cookie Without Secure Flag
+21901 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Cross-Domain Misconfiguration
+21906 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Cross-Domain JavaScript Source File Inclusion
+21911 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Absence of Anti-CSRF Tokens
+21914 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Directory Browsing
+21914 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Hash Disclosure
+21914 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Heartbleed OpenSSL Vulnerability (Indicative)
+21927 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: In Page Banner Information Leak
+21932 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Private IP Disclosure
+21932 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Session ID in URL Rewrite
+21932 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Information Disclosure - Debug Error Messages
+21945 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Information Disclosure - Sensitive Information in URL
+21948 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Information Disclosure - Sensitive Information in HTTP Referrer Header
+21948 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Information Disclosure - Suspicious Comments
+21956 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Weak Authentication Method
+21959 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: HTTP to HTTPS Insecure Transition in Form Post
+21959 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: HTTPS to HTTP Insecure Transition in Form Post
+21969 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Insecure JSF ViewState
+21969 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Java Serialization Object
+21975 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Reverse Tabnabbing
+21975 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Secure Pages Include Mixed Content
+21975 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Modern Web Application
+21975 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: PII Disclosure
+21994 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Script Served From Malicious Domain (polyfill)
+22000 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Retrieved from Cache
+22005 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: HTTP Server Response Header
+22009 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Strict-Transport-Security Header
+22015 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Sub Resource Integrity Attribute Missing
+22020 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Timestamp Disclosure
+22025 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: User Controllable Charset
+22027 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Cookie Poisoning
+22036 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: User Controllable HTML Element Attribute (Potential XSS)
+22036 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: User Controllable JavaScript Event (XSS)
+22045 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Off-site Redirect
+22052 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Username Hash Found
+22056 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Viewstate
+22062 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: X-AspNet-Version Response Header
+22068 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: X-Backend-Server Header Information Leak
+22072 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: X-ChromeLogger-Data (XCOLD) Header Information Leak
+22079 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: X-Content-Type-Options Header Missing
+22083 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: X-Debug-Token Information Leak
+22083 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Server Leaks Information via "X-Powered-By" HTTP Response Header Field(s)
+22093 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: ZAP is Out of Date
+22097 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Vulnerable JS Library (Powered by Retire.js)
+22110 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Script Passive Scan Rules
+22118 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: WSDL File Detection
+22122 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.pscan.internal.ScanRuleManager - Loaded passive scan rule: Stats Passive Scan Rule
+22208 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.network.ExtensionNetwork - Creating new root CA certificate.
+23224 [ZAP-BootstrapGUI] INFO  org.zaproxy.addon.network.ExtensionNetwork - New root CA certificate created.
+47882 [AWT-EventQueue-0] INFO  org.parosproxy.paros.control.Control - New Session
+47900 [AWT-EventQueue-0] INFO  org.parosproxy.paros.control.Control - Create and Open Untitled Db
+48783 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.CommandLine - Job openapi set apiUrl = https://unearthtest-nonprod-discoveryapi.blackocean-b19cf4b1.australiaeast.azurecontainerapps.io/swagger/all/swagger.json
+48783 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.CommandLine - Job openapi set targetUrl = https://test.xpreshon.unearth.ai/api/discovery-test-api
+48783 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.CommandLine - Job openapi set context = xpreshon-anon
+48783 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.CommandLine - Job passiveScan-wait set maxDuration = 5
+48783 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.CommandLine - Job activeScan set context = xpreshon-anon
+48783 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.CommandLine - Job activeScan set maxScanDurationInMins = 5
+48790 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.CommandLine - Job report set template = traditional-html
+48790 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.CommandLine - Job report set reportDir = C:/Users/USER/Downloads/xpreshon-hybrid-framework/xpf/reports
+48790 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.CommandLine - Job report set reportFile = xpreshon-auth
+48790 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.CommandLine - Job report set reportTitle = Xpreshon DAST-003 � Unauthenticated Attack Surface
+48845 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.CommandLine - Job report set template = sarif-json
+48846 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.CommandLine - Job report set reportDir = C:/Users/USER/Downloads/xpreshon-hybrid-framework/xpf/reports
+48846 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.CommandLine - Job report set reportFile = xpreshon-auth
+48957 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.CommandLine - Job openapi started
+146231 [ZAP-Import-OpenAPI-1] WARN  org.zaproxy.zap.extension.openapi.ExtensionOpenApi - Failed to access URL: https://test.xpreshon.unearth.ai/api/discovery-test-api/api/test/deeplynested : org.zaproxy.addon.network.common.ZapSocketTimeoutException : Read timed out
+146236 [ZAP-Import-OpenAPI-1] WARN  org.zaproxy.zap.extension.openapi.ExtensionOpenApi - Failed to access URL: https://test.xpreshon.unearth.ai/api/discovery-test-api/api/search/reference-data?id=5f725d88-5ce4-43ee-a187-292716a21f40 : org.zaproxy.addon.network.common.ZapSocketTimeoutException : Read timed out
+146236 [ZAP-Import-OpenAPI-1] WARN  org.zaproxy.zap.extension.openapi.ExtensionOpenApi - Failed to access URL: https://test.xpreshon.unearth.ai/api/discovery-test-api/api/forms/solutionId : org.zaproxy.addon.network.common.ZapSocketTimeoutException : Read timed out
+146262 [ZAP-BootstrapGUI] ERROR org.parosproxy.paros.CommandLine - Job openapi target: https://test.xpreshon.unearth.ai/api/discovery-test-api error: Failed to access URL: https://test.xpreshon.unearth.ai/api/discovery-test-api/api/test/deeplynested : org.zaproxy.addon.network.common.ZapSocketTimeoutException : Read timed out
+146262 [ZAP-BootstrapGUI] ERROR org.parosproxy.paros.CommandLine - Job openapi target: https://test.xpreshon.unearth.ai/api/discovery-test-api error: Failed to access URL: https://test.xpreshon.unearth.ai/api/discovery-test-api/api/search/reference-data?id=5f725d88-5ce4-43ee-a187-292716a21f40 : org.zaproxy.addon.network.common.ZapSocketTimeoutException : Read timed out
+146263 [ZAP-BootstrapGUI] ERROR org.parosproxy.paros.CommandLine - Job openapi target: https://test.xpreshon.unearth.ai/api/discovery-test-api error: Failed to access URL: https://test.xpreshon.unearth.ai/api/discovery-test-api/api/forms/solutionId : org.zaproxy.addon.network.common.ZapSocketTimeoutException : Read timed out
+146263 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.CommandLine - Job openapi added 17 URLs
+146269 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.CommandLine - Job openapi finished, time taken: 00:01:37
+146269 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.CommandLine - Job passiveScan-wait started
+147284 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.CommandLine - Job passiveScan-wait finished, time taken: 00:00:01
+147292 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.CommandLine - Job activeScan started
+147316 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.core.scanner.Scanner - scanner with ID 0 started
+159309 [ZAP-Scanner-0] INFO  org.parosproxy.paros.core.scanner.HostProcess - Scanning 31 node(s) from https://test.xpreshon.unearth.ai
+159309 [ZAP-Scanner-0] INFO  org.parosproxy.paros.core.scanner.HostProcess - start host https://test.xpreshon.unearth.ai | PathTraversalScanRule strength MEDIUM threshold MEDIUM
+369249 [ZAP-Scanner-0] INFO  org.parosproxy.paros.core.scanner.HostProcess - completed host/plugin https://test.xpreshon.unearth.ai | PathTraversalScanRule in 209.94s with 864 message(s) sent and 0 alert(s) raised.
+369249 [ZAP-Scanner-0] INFO  org.parosproxy.paros.core.scanner.HostProcess - start host https://test.xpreshon.unearth.ai | RemoteFileIncludeScanRule strength MEDIUM threshold MEDIUM
+447973 [ZAP-Scanner-0] INFO  org.parosproxy.paros.core.scanner.HostProcess - stopped host/plugin https://test.xpreshon.unearth.ai | RemoteFileIncludeScanRule in 78.724s with 408 message(s) sent and 0 alert(s) raised.
+447973 [ZAP-Scanner-0] INFO  org.parosproxy.paros.core.scanner.HostProcess - completed host https://test.xpreshon.unearth.ai in 300.644s with 0 alert(s) raised.
+447973 [Thread-5] INFO  org.parosproxy.paros.core.scanner.Scanner - scanner with ID 0 completed in 300.657s
+448072 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.CommandLine - Job activeScan finished, time taken: 00:05:00
+448072 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.CommandLine - Job report started
+448568 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.CommandLine - Job report generated report C:\Users\USER\Downloads\xpreshon-hybrid-framework\xpf\reports\xpreshon-auth.html
+448568 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.CommandLine - Job report finished, time taken: 00:00:00
+448568 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.CommandLine - Job report started
+448756 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.CommandLine - Job report generated report C:\Users\USER\Downloads\xpreshon-hybrid-framework\xpf\reports\xpreshon-auth.json
+448756 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.CommandLine - Job report finished, time taken: 00:00:00
+448756 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.CommandLine - Automation plan failures:
+448760 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.CommandLine - 	Job openapi target: https://test.xpreshon.unearth.ai/api/discovery-test-api error: Failed to access URL: https://test.xpreshon.unearth.ai/api/discovery-test-api/api/test/deeplynested : org.zaproxy.addon.network.common.ZapSocketTimeoutException : Read timed out
+448760 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.CommandLine - 	Job openapi target: https://test.xpreshon.unearth.ai/api/discovery-test-api error: Failed to access URL: https://test.xpreshon.unearth.ai/api/discovery-test-api/api/search/reference-data?id=5f725d88-5ce4-43ee-a187-292716a21f40 : org.zaproxy.addon.network.common.ZapSocketTimeoutException : Read timed out
+448760 [ZAP-BootstrapGUI] INFO  org.parosproxy.paros.CommandLine - 	Job openapi target: https://test.xpreshon.unearth.ai/api/discovery-test-api error: Failed to access URL: https://test.xpreshon.unearth.ai/api/discovery-test-api/api/forms/solutionId : org.zaproxy.addon.network.common.ZapSocketTimeoutException : Read timed out
