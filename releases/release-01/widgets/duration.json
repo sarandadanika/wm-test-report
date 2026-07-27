@@ -1,1 +1,1 @@
-[{"uid":"ec80bf77cc87e88a","name":"DAST-001","time":{"start":1785138471105,"stop":1785138910903,"duration":439798},"status":"passed","severity":"normal"}]
+[{"uid":"f96da4d6acc396b0","name":"FLOW-001","time":{"start":1785145705231,"stop":1785145871704,"duration":166473},"status":"broken","severity":"normal"}]
