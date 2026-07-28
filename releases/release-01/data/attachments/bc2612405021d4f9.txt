@@ -1,3 +1,0 @@
-Flow 'flow-login' scanned to 91% — Critical=0, High=0, Medium=33, Low=79, Info=61
-
-No findings at or above HIGH.
