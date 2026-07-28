@@ -1,1 +1,1 @@
-{"ce4c0c030af4d2889a8a181d00c1c6a3":{"statistic":{"failed":0,"broken":1,"skipped":0,"passed":0,"unknown":0,"total":1},"items":[{"uid":"616f7837b2965fee","status":"broken","statusDetails":"ZAP active scan failed for https://test.xpreshon.unearth.ai","time":{"start":1785203762291,"stop":1785204023839,"duration":261548}}]}}
+{"ce4c0c030af4d2889a8a181d00c1c6a3":{"statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1},"items":[{"uid":"bc1febce7b69b177","status":"passed","time":{"start":1785206242848,"stop":1785207539960,"duration":1297112}}]}}
