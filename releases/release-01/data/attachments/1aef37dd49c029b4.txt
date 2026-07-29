@@ -1,0 +1,8 @@
+Flow 'flow-create' scanned to 100% — Critical=0, High=2, Medium=9, Low=24, Info=21
+
+Findings at or above HIGH:
+  [HIGH] 40018 — The page results were successfully manipulated using the boolean conditions [ AND 1=1 -- ] and [ AND 1=2 -- ]
+The parameter value being modified was stripped from the HTML output for the purposes of the comparison.
+Data was returned for the original parameter.
+The vulnerability was detected by successfully restricting the data originally returned, by manipulating the parameter.
+  [HIGH] 40024 — The query time is controllable using parameter value [case randomblob(100000) when not null then 1 else 1 end ], which caused the request to take [2,638] milliseconds, parameter value [case randomblob(1000000) when not null then 1 else 1 end ], which caused the request to take [3,330] milliseconds, when the original unmodified query with value [AUTHZ Test 1785312916211] took [1,123] milliseconds.
