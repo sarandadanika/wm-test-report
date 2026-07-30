@@ -1,1 +1,1 @@
-{"ce4c0c030af4d2889a8a181d00c1c6a3":{"statistic":{"failed":0,"broken":1,"skipped":0,"passed":0,"unknown":0,"total":1},"items":[{"uid":"1862eb027894a65d","status":"broken","statusDetails":"ZAP API did not respond within 150s on 127.0.0.1:54546","time":{"start":1785386415006,"stop":1785386566716,"duration":151710}}]}}
+{"ce4c0c030af4d2889a8a181d00c1c6a3":{"statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1},"items":[{"uid":"3a895cc89c4ac327","status":"passed","time":{"start":1785387523834,"stop":1785388540251,"duration":1016417}}]}}
