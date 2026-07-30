@@ -1,1 +1,1 @@
-[{"uid":"df0fde913f832e08","name":"FLOW-003","time":{"start":1785312795570,"stop":1785318143142,"duration":5347572},"status":"failed","severity":"normal"}]
+[{"uid":"5cd1bfd34eb72cdf","name":"SMOKE-001","time":{"start":1785375283810,"stop":1785375324592,"duration":40782},"status":"broken","severity":"normal"}]
