@@ -1,2 +1,2 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"broken","Thu Jul 30 07:56:26 IST 2026","Thu Jul 30 07:57:08 IST 2026","42960","Default Suite","xpreshon-hybrid-framework","com.wildmouse.xpreshon.tests.e2e.LoginSmokeTest","com.wildmouse.xpreshon.tests.e2e.LoginSmokeTest","loginWithLocalAccount","SMOKE-001",""
+"passed","Thu Jul 30 07:58:50 IST 2026","Thu Jul 30 07:59:19 IST 2026","29196","Default Suite","xpreshon-hybrid-framework","com.wildmouse.xpreshon.tests.e2e.LoginSmokeTest","com.wildmouse.xpreshon.tests.e2e.LoginSmokeTest","loginWithLocalAccount","SMOKE-001",""
