@@ -1,0 +1,10 @@
+HTTP 401 HTTP/1.1 401 Unauthorized
+
+── Response Headers ──
+content-length: 0
+date: Fri, 31 Jul 2026 04:53:27 GMT
+server: Kestrel
+www-authenticate: Bearer
+
+── Response Body ──
+(empty)
