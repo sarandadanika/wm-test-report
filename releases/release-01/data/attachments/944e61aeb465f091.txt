@@ -1,3 +1,0 @@
-Sign In button visible: true
-Feed button visible: false
-Session invalidated: logout ended authenticated access

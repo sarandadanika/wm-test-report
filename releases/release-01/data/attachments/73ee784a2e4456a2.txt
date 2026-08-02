@@ -1,4 +1,0 @@
-Session cached: true
-URL starts with app base: true
-HTTPS enforced: true
-User display name visible: danika
