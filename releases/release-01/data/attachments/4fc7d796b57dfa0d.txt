@@ -1,0 +1,9 @@
+HTTP 301 HTTP/1.1 301 Moved Permanently
+
+── Response Headers ──
+location: https://unearthtest-nonprod-discoveryapi.blackocean-b19cf4b1.australiaeast.azurecontainerapps.io/api/search/corpora
+date: Wed, 19 Aug 2026 19:05:42 GMT
+content-length: 0
+
+── Response Body ──
+(empty)

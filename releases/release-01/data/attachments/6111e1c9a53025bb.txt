@@ -1,4 +1,0 @@
-Flow 'flow-browse' scanned to 100% — Critical=0, High=1, Medium=9, Low=10, Info=19
-
-Findings at or above HIGH:
-  [HIGH] 40024 — The query time is controllable using parameter value [case randomblob(1000000) when not null then 1 else 1 end ], which caused the request to take [326] milliseconds, parameter value [case randomblob(10000000) when not null then 1 else 1 end ], which caused the request to take [1,272] milliseconds, when the original unmodified query with value [daff-storage-facility-export-fsp-v1] took [448] milliseconds.

@@ -1,0 +1,2 @@
+Authorization request: https://dev-mb1cw8oxwhdemzzs.au.auth0.com/authorize?client_id=0grxJxiMTBENupSe2e7hThDa2TGsbosm&response_type=code&redirect_uri=https%3A%2F%2Ftest.xpreshon.unearth.ai&scope=openid+profile+email+offline_access&response_mode=query&code_challenge=Msg6r0PzMA2tCejSZUi8YFPpMK56s3LwAkUROaeSIIg&code_challenge_method=S256&state=<redacted>&audience=https%3A%2F%2Fapi.staging.unearth.ai%2Fapi%2Fdiscovery-test-api
+Browser landed on:     https://dev-mb1cw8oxwhdemzzs.au.auth0.com/u/login/identifier?state=<redacted>

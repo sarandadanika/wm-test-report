@@ -1,0 +1,36 @@
+
+C:\Tools\Zap>if exist "C:\Windows\ServiceProfiles\NetworkService\ZAP\.ZAP_JVM.properties" (set /p jvmopts= 0<"C:\Windows\ServiceProfiles\NetworkService\ZAP\.ZAP_JVM.properties" )  else (set jvmopts=-Xmx512m ) 
+
+C:\Tools\Zap>java -Xmx512m -jar zap-2.17.0.jar -cmd -dir C:\Windows\SERVIC~1\NETWOR~1\AppData\Local\Temp\zap-home-1137203929765157399 -config network.connection.timeoutInSecs=120 -config connection.timeoutInSecs=120 -autorun C:\Windows\SERVIC~1\NETWOR~1\AppData\Local\Temp\zap-plan-11261632813388218524.yaml 
+1299 [main] INFO  org.parosproxy.paros.Constant - Copying default configuration to C:\Windows\SERVIC~1\NETWOR~1\AppData\Local\Temp\zap-home-1137203929765157399\config.xml
+1424 [main] INFO  org.parosproxy.paros.Constant - Creating directory C:\Windows\SERVIC~1\NETWOR~1\AppData\Local\Temp\zap-home-1137203929765157399\session
+1424 [main] INFO  org.parosproxy.paros.Constant - Creating directory C:\Windows\SERVIC~1\NETWOR~1\AppData\Local\Temp\zap-home-1137203929765157399\dirbuster
+1424 [main] INFO  org.parosproxy.paros.Constant - Creating directory C:\Windows\SERVIC~1\NETWOR~1\AppData\Local\Temp\zap-home-1137203929765157399\fuzzers
+1424 [main] INFO  org.parosproxy.paros.Constant - Creating directory C:\Windows\SERVIC~1\NETWOR~1\AppData\Local\Temp\zap-home-1137203929765157399\plugin
+Job openapi set apiUrl = https://unearthtest-nonprod-discoveryapi.blackocean-b19cf4b1.australiaeast.azurecontainerapps.io/swagger/all/swagger.json
+Job openapi set targetUrl = https://test.xpreshon.unearth.ai/api/discovery-test-api
+Job openapi set context = xpreshon-anon
+Job passiveScan-wait set maxDuration = 5
+Job activeScan set context = xpreshon-anon
+Job activeScan set maxScanDurationInMins = 5
+Job report set template = traditional-html
+Job report set reportDir = C:/wm-reports
+Job report set reportFile = xpreshon-auth
+Job report set reportTitle = Xpreshon DAST-003 � Unauthenticated Attack Surface
+Job report set template = sarif-json
+Job report set reportDir = C:/wm-reports
+Job report set reportFile = xpreshon-auth
+Job openapi started
+Job openapi added 23 URLs
+Job openapi finished, time taken: 00:00:09
+Job passiveScan-wait started
+Job passiveScan-wait finished, time taken: 00:00:01
+Job activeScan started
+Job activeScan finished, time taken: 00:05:00
+Job report started
+Job report generated report C:\wm-reports\xpreshon-auth.html
+Job report finished, time taken: 00:00:00
+Job report started
+Job report generated report C:\wm-reports\xpreshon-auth.json
+Job report finished, time taken: 00:00:00
+Automation plan succeeded!

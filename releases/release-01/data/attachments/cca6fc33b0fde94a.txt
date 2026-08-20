@@ -1,0 +1,5 @@
+Refresh token captured while authenticated: true
+Logged out via UI: true
+Replayed captured refresh token against the IdP token endpoint: HTTP 200
+New access token issued: true
+Token explicitly rejected (invalid_grant): false

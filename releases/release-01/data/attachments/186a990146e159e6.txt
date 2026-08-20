@@ -1,0 +1,4 @@
+Authenticated before reload: true
+Home (Feed) still visible after reload: true
+Sign In shown after reload: false
+Session persisted across reload: true

@@ -1,0 +1,2 @@
+GET https://unearthtest-nonprod-discoveryapi.blackocean-b19cf4b1.australiaeast.azurecontainerapps.io/api/search/corpora
+Authorization: Bearer eyJhbGciOiJSU...urity-test
