@@ -1,0 +1,3 @@
+httpOnly 'xpreshon_session' cookie present before any login: false
+Authenticated (Feed) after login: true
+httpOnly 'xpreshon_session' cookie present after login: true

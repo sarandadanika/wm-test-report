@@ -1,3 +1,0 @@
-Flow 'flow-create' scanned to 100% — Critical=0, High=0, Medium=7, Low=17, Info=22
-
-No findings at or above HIGH.

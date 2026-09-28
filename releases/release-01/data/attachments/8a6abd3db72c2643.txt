@@ -1,3 +1,0 @@
-Token present before any login attempt: false
-Authenticated after login: true
-Access token present after successful login: true

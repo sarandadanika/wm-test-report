@@ -1,0 +1,5 @@
+Session live before logout: true (HTTP 200 isLoggedIn=true)
+Captured httpOnly 'xpreshon_session' cookie: true
+/api/auth/me with the jar as logout left it: HTTP 200 isLoggedIn=false
+/api/auth/me after re-presenting the captured cookie: HTTP 200 isLoggedIn=true
+Captured session still authenticates after logout: true

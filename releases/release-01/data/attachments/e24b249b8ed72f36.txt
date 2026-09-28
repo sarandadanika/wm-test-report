@@ -1,3 +1,0 @@
-Flow 'flow-submit-v2' scanned to 100% — Critical=0, High=0, Medium=6, Low=14, Info=17
-
-No findings at or above HIGH.
