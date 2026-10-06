@@ -1,3 +1,0 @@
-Sign-out control label (verbatim): 'Sign out'
-Expected (capital O): 'Sign Out'
-Matches expected: false
