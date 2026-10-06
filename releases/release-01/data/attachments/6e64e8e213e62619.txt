@@ -1,0 +1,3 @@
+URL immediately after sign out: https://test.xpreshon.unearth.ai/login
+Routed through a Google/IdP account-picker or logout-chooser: false
+App Sign In offered after sign out: true

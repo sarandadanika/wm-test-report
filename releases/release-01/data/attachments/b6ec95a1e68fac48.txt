@@ -1,5 +1,0 @@
-Session live via /api/auth/me: true
-httpOnly 'xpreshon_session' cookie present (credential lives here): true
-FlutterSecureStorage* token keys present: false
-JWT-shaped value in storage: false
-Token-shaped storage keys found: (none)
