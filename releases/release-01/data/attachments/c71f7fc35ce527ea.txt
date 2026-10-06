@@ -1,0 +1,3 @@
+Offline interruption: ~8s
+Authenticated (Feed) after network restored: true
+Dropped to Sign In after the blip: false

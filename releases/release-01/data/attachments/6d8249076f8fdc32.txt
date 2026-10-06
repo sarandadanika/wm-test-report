@@ -1,5 +1,0 @@
-Idle duration: 420s (no interaction)
-URL after idle: https://test.xpreshon.unearth.ai/
-Sign In shown without any action: false
-Still on the Feed after idle: true
-Auto-redirected to login on idle: false
