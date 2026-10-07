@@ -1,0 +1,7 @@
+/api/auth/me calls during the login handshake: 2
+/api/auth/me calls triggered by a single F5 refresh: 1
+All /api/auth/me responses seen:
+GET    200  https://test.xpreshon.gateway.unearth.ai/api/auth/me
+GET    200  https://test.xpreshon.gateway.unearth.ai/api/auth/me
+GET    200  https://test.xpreshon.gateway.unearth.ai/api/auth/me
+Expected on refresh: exactly 1 (a second indicates the dashboard loaded twice).

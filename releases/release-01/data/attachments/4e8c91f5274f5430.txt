@@ -1,6 +1,0 @@
-Synthetic drop dispatched on: dropzone semantics node, then flutter-view
-Upload request (/api/ask) observed after the drop: false
-'drop' listeners registered — flutter-view: 0, body: 0, document: 0, window: 1 (total 1; -1 = CDP unavailable)
-A registered drop listener is the deterministic signal that drag-and-drop is wired. The synthetic
-drop is best-effort: an untrusted DragEvent can be ignored even when a real mouse drop works, so a
-wired-but-not-accepted result still warrants a manual gesture check.
