@@ -1,0 +1,13 @@
+19.9MB: ACCEPTED (upload [200, 400])
+POST 400  https://test.xpreshon.gateway.unearth.ai/api/data/api/ask
+(body not captured)
+
+POST 413  https://test.xpreshon.gateway.unearth.ai/api/data/api/ask
+(body not captured)
+
+20,971,520 B: ACCEPTED (upload [200, 413])
+POST 413  https://test.xpreshon.gateway.unearth.ai/api/data/api/ask
+(body not captured)
+
+20,000,000 B: ACCEPTED (upload [200], analysing)
+(no 4xx/5xx answers for this offer)
