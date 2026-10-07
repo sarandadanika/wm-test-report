@@ -1,2 +1,0 @@
-5 files at once -> ACCEPTED (upload [200, 200])
-1 more after removing one -> ACCEPTED (upload [200, 200])

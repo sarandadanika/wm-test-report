@@ -1,0 +1,6 @@
+10KB -> ACCEPTED (upload [200], analysing)
+19.9MB -> ACCEPTED (upload [200, 400])
+exactly 20,971,520 B (20MB binary) -> ACCEPTED (upload [200, 413])
+exactly 20,000,000 B (20MB decimal) -> ACCEPTED (upload [200])
+20.1MB -> REJECTED client-side (no upload request)
+100MB -> REJECTED client-side (no upload request)
