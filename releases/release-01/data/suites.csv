@@ -1,2 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Wed Oct 07 23:06:15 IST 2026","Wed Oct 07 23:09:23 IST 2026","188009","Surefire suite","Surefire test","com.wildmouse.xpreshon.tests.functional.upload.FloorPlanUploadTest","com.wildmouse.xpreshon.tests.functional.upload.FloorPlanUploadTest","sizeBoundaries","UPLOAD-005","Size boundaries around 20MB: 10KB and 19.9MB upload; 20.1MB and 100MB are refused; the exact 20MB probes reveal whether the app counts 1024- or 1000-based MB"

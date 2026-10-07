@@ -1,1 +1,1 @@
-{"uid":"b1a8273437954620fa374b796ffaacdd","name":"behaviors","children":[{"name":"UPLOAD-005","uid":"5d2ee9c2bf7714c0","parentUid":"b1a8273437954620fa374b796ffaacdd","status":"passed","time":{"start":1791394575819,"stop":1791394763828,"duration":188009},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[],"tags":[]}]}
+{"uid":"b1a8273437954620fa374b796ffaacdd","name":"behaviors","children":[]}
