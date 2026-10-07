@@ -1,3 +1,0 @@
-Synthetic drop dispatched on: dropzone semantics node, then flutter-view
-Upload request (/api/ask) observed after the drop: false
-Upload requests seen in total: 0
