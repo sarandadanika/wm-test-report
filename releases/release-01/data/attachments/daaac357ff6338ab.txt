@@ -1,0 +1,4 @@
+Idle before the action: 420s
+Returned to login after the action: true
+401 responses fired to the API by that action: 0
+Expected: returned to login AND 0 x 401 (expiry detected before the call)
