@@ -1,7 +1,0 @@
-URL before timeout: https://test.xpreshon.unearth.ai/
-URL after timeout:  https://test.xpreshon.unearth.ai/login
-App Sign In visible after timeout: true
-Feed (authenticated content) still visible: false
-Redirected to IdP login (/authorize): false
-Landed on an IdP logout screen: false
-Clean re-authentication reachable (no weird logout dead-end): true
