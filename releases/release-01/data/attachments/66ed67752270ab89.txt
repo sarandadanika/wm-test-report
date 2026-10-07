@@ -1,0 +1,4 @@
+.jfif -> REJECTED server-side (POST [400] from 1 call)
+.tiff -> REJECTED server-side (POST [400] from 1 call)
+.heic -> REJECTED server-side (POST [400] from 1 call)
+.heif -> REJECTED server-side (POST [400] from 1 call)
