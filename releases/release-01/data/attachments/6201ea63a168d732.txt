@@ -1,4 +1,4 @@
-10KB -> ACCEPTED (upload [200] from 2 calls)
+10KB -> ACCEPTED (upload [200, 200] from 2 calls)
 19.9MB -> ACCEPTED (upload [200, 400] from 2 calls)
 exactly 20,971,520 B (20MB binary) -> ACCEPTED (upload [200, 413] from 2 calls)
 exactly 20,000,000 B (20MB decimal) -> ACCEPTED (upload [200, 413] from 2 calls)
