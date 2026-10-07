@@ -1,5 +1,0 @@
-Feed (baseline): 10 content nodes
-Actions: 10 content nodes after settling
-Feed: 10 content nodes after settling
-Actions: 10 content nodes after settling
-Feed: 10 content nodes after settling

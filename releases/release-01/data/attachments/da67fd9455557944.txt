@@ -1,3 +1,0 @@
-URL after password submit: https://test.xpreshon.unearth.ai/?code=DRGMXyFAj7FthBR1kTwt1pIbpoW0Zb6Ac_IN413hm-Mpi&state=m-ENABppRPKHgWlNMmT8hg
-Second-factor (MFA/OTP) challenge presented: false
-Expected: true (MFA enabled for the app)
