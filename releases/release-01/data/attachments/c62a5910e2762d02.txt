@@ -1,6 +1,0 @@
-10KB -> ACCEPTED (POST [200] from 1 call, analysing)
-19.9MB -> REJECTED server-side (POST [400] from 1 call)
-exactly 20,971,520 B (20MB binary) -> REJECTED server-side (POST [413] from 1 call)
-exactly 20,000,000 B (20MB decimal) -> REJECTED server-side (POST [413] from 1 call)
-20.1MB -> REJECTED client-side (no upload request)
-100MB -> REJECTED client-side (no upload request)
