@@ -1,1 +1,1 @@
-[{"uid":"c69998efa7ba3478","name":"BUG-8182","time":{"start":1791368029754,"stop":1791368487761,"duration":458007},"status":"passed","severity":"normal"}]
+[{"uid":"96acb2747e1c23de","name":"BUG-17393","time":{"start":1791368872783,"stop":1791368964212,"duration":91429},"status":"broken","severity":"normal"}]
