@@ -1,6 +1,0 @@
-10KB -> REJECTED server-side (upload [] from 1 call, no analysis)
-19.9MB -> REJECTED server-side (upload [400] from 1 call, no analysis)
-exactly 20,971,520 B (20MB binary) -> REJECTED server-side (upload [413] from 1 call, no analysis)
-exactly 20,000,000 B (20MB decimal) -> REJECTED server-side (upload [413] from 1 call, no analysis)
-20.1MB -> REJECTED client-side (no upload request)
-100MB -> REJECTED client-side (no upload request)
