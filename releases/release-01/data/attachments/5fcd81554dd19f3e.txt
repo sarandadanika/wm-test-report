@@ -1,7 +1,0 @@
-floor-plan.pdf -> REJECTED client-side (no upload request)
-floor-plan.bmp -> REJECTED client-side (no upload request)
-floor-plan.svg -> REJECTED client-side (no upload request)
-floor-plan.webp -> REJECTED client-side (no upload request)
-floor-plan.docx -> REJECTED client-side (no upload request)
-floor-plan.exe -> REJECTED client-side (no upload request)
-floor-plan.html -> REJECTED client-side (no upload request)

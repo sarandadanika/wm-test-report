@@ -1,2 +1,0 @@
-5 files at once -> ACCEPTED (POST [200] from 1 call)
-1 more after removing one -> ACCEPTED (POST [200] from 1 call)

@@ -1,8 +1,0 @@
-renamed .exe: REJECTED server-side (POST [500] from 1 call)
-POST 500  https://test.xpreshon.gateway.unearth.ai/api/data/api/ask
-
-corrupted .jpg: REJECTED server-side (POST [500] from 1 call)
-POST 500  https://test.xpreshon.gateway.unearth.ai/api/data/api/ask
-
-zero-byte .jpg: REJECTED server-side (POST [500] from 1 call)
-POST 500  https://test.xpreshon.gateway.unearth.ai/api/data/api/ask

@@ -1,6 +1,0 @@
-FLOOR-PLAN.JPG -> ACCEPTED (POST [200] from 1 call, analysing)
-FLOOR-PLAN.PNG -> ACCEPTED (POST [200] from 1 call, analysing)
-plan.jpg.exe -> REJECTED client-side (no upload request)
-renamed exe -> plan-renamed.jpg -> REJECTED server-side (POST [500] from 1 call)
-corrupted.jpg -> REJECTED server-side (POST [500] from 1 call)
-empty.jpg (0 bytes) -> REJECTED server-side (POST [500] from 1 call)

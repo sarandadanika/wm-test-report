@@ -1,2 +1,0 @@
-4.5 MiB (4,718,592 B) -> ACCEPTED (POST [200] from 1 call)
-5.5 MiB (5,767,168 B) -> REJECTED server-side (POST [400] from 1 call)

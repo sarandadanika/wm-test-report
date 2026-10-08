@@ -1,5 +1,0 @@
-.jpg -> ACCEPTED (POST [200] from 1 call)
-.png -> ACCEPTED (POST [200] from 1 call)
-.gif -> ACCEPTED (POST [200] from 1 call)
-.jpeg -> ACCEPTED (POST [200] from 1 call, analysing)
-.jfif -> REJECTED server-side (POST [400] from 1 call)
