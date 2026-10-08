@@ -5,6 +5,5 @@ POST 400  https://test.xpreshon.gateway.unearth.ai/api/data/api/ask
 20,971,520 B: REJECTED server-side (POST [413] from 1 call) — requests: POST 54,512,363 B
 ??? 413  https://test.xpreshon.gateway.unearth.ai/api/data/api/ask
 
-20,000,000 B: REJECTED server-side (POST [413] from 1 call) — requests: POST 81,179,116 B
-POST 413  https://test.xpreshon.gateway.unearth.ai/api/data/api/ask
-(body not captured)
+20,000,000 B: REJECTED client-side (no upload request) — requests: (no /api/ask requests)
+(no 4xx/5xx answers for this offer)
