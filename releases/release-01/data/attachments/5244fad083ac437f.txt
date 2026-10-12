@@ -1,0 +1,1 @@
+xpreshon_pkce [domain=test.xpreshon.gateway.unearth.ai path=/api/auth httpOnly=true secure=true sameSite=Lax expiresIn=582s], xpreshon_session [domain=test.xpreshon.gateway.unearth.ai path=/ httpOnly=true secure=true sameSite=Lax expiresIn=86395s]

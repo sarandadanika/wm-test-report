@@ -1,0 +1,2 @@
+GET https://test.xpreshon.gateway.unearth.ai/api/auth/me
+Authorization: (none)

@@ -1,0 +1,70 @@
+HTTP 200 HTTP/1.1 200 OK
+
+── Response Headers ──
+Content-Type: text/html
+Date: Mon, 12 Oct 2026 18:17:24 GMT
+Cache-Control: public, must-revalidate, max-age=30
+Content-Encoding: gzip
+ETag: "63687219"
+Last-Modified: Wed, 07 Oct 2026 01:34:53 GMT
+Transfer-Encoding: chunked
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Referrer-Policy: strict-origin-when-cross-origin
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-DNS-Prefetch-Control: off
+Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'sha256-cgINIZw4iKgU7zccO2vPeZdQJIMlKEchLZG6hpkP+8k=' 'sha256-2hxujCU6WzSO6ycZznxFKlHE++BDsDuMYXT/O0zl8rM='; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self' blob: https://test.xpreshon.gateway.unearth.ai https://firebaseinstallations.googleapis.com https://fcmregistrations.googleapis.com; worker-src 'self' blob:; frame-src 'none'; form-action 'self'; frame-ancestors 'none';
+X-Frame-Options: DENY
+
+── Response Body ──
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="/">
+
+  <!-- Core web metadata -->
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="One App. Endless Convenience.">
+  <meta name="theme-color" content="#525A1B">
+
+  <!-- Social preview metadata -->
+  <meta property="og:title" content="Xpreshon">
+  <meta property="og:description" content="One App. Endless Convenience.">
+  <meta property="og:image" content="https://test.xpreshon.unearth.ai/icons/Icon-512.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Xpreshon">
+  <meta name="twitter:description" content="One App. Endless Convenience.">
+  <meta name="twitter:image" content="https://test.xpreshon.unearth.ai/icons/Icon-512.png">
+
+  <!-- PWA install metadata -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Xpreshon">
+  <link rel="apple-touch-icon" href="https://test.xpreshon.unearth.ai/icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <script src="firebase_sdk_loader.js" defer></script>
+  <script src="firebase_messaging_registration.js" defer></script>
+  <title>Xpreshon</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="css/app_splash.css">
+  <link rel="stylesheet" href="css/app_splash_brand.css">
+</head>
+<body>
+  <div id="app-splash" role="status" aria-label="Loading">
+    <img class="app-splash-logo app-splash-logo-light" src="images/logo_light.png" alt="Xpreshon">
+    <img class="app-splash-logo app-splash-logo-dark" src="images/logo_dark.png" alt="Xpreshon">
+    <div class="app-splash-tagline">Almost there! We're preparing what you need&hellip;</div>
+    <div class="app-splash-spinner"></div>
+    <svg class="app-splash-wave" viewBox="0 0 1440 220" preserveAspectRatio="none" fill="currentColor" aria-hidden="true">
+      <path d="M0,120 C240,220 480,20 720,80 C960,140 1200,220 1440,120 L1440,220 L0,220 Z"></path>
+    </svg>
+  </div>
+  <script src="flutter_bootstrap.js" defer></script>
+  <script src="js/app_splash.js" defer></script>
+</body>
+</html>

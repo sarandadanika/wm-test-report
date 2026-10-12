@@ -1,0 +1,1 @@
+Persistent cookie: expires in 86395 s (~1439 min) — 'close and reopen the browser' within that window keeps the user signed in.
