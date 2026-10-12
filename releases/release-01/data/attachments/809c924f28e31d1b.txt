@@ -1,0 +1,2 @@
+URL after bookmark re-visit: https://test.xpreshon.unearth.ai/login
+State: LOGIN_REQUIRED (SIGNED_IN = session restored, LOGIN_REQUIRED = re-auth asked, UNKNOWN = neither painted within 90s)
