@@ -1,4 +1,0 @@
-Started at: https://test.xpreshon.unearth.ai/?returnTo=%2F%2Fexample.org%2F
-Landed on:  https://test.xpreshon.unearth.ai/
-Host: test.xpreshon.unearth.ai (app host test.xpreshon.unearth.ai)
-State: SIGNED_IN
