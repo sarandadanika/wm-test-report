@@ -1,0 +1,3 @@
+Empty email -> still on identifier step: true, message: (none in the DOM — browser-level validation)
+Empty password -> still on password step: true, message: (none in the DOM — browser-level validation)
+State: LOGIN_REQUIRED

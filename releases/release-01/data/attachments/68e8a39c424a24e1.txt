@@ -1,0 +1,3 @@
+Back/edit control on the password step: true
+Identifier step shown again after using it: true
+URL: https://dev-mb1cw8oxwhdemzzs.au.auth0.com/u/login/identifier?state=hKFo2SBJZl9fQ29KQ1J2U2M2MVB6cGZERmVWU1gwVmxveHlZYaFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIFJYQXRObGxsTmtXaUl2QWZWSF9HdFpaYjdBbDVrQUhro2NpZNkgMGdyeEp4aU1UQkVOdXBTZTJlN2hUaERhMlRHc2Jvc20
