@@ -1,4 +1,0 @@
-Session cookie issued at login: true
-Live 'xpreshon_session' cookie after logout: false
-Cookies still applicable to the gateway: xpreshon_pkce [domain=test.xpreshon.gateway.unearth.ai path=/api/auth httpOnly=true secure=true sameSite=Lax expiresIn=583s]
-Storage keys that look like a token/session (keys only): []
