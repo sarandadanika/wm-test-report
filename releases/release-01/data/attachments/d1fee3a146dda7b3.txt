@@ -1,3 +1,0 @@
-While unreachable -> URL: https://dev-mb1cw8oxwhdemzzs.au.auth0.com/u/login/identifier?state=hKFo2SBqZUxPblc0NFF2YlNZN09nN00tNWxxODlNd1Z5MF81SqFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIEtUcThzNko5NXJzWUZsc2xTelFTLVNrdE1ER1BweWlHo2NpZNkgMGdyeEp4aU1UQkVOdXBTZTJlN2hUaERhMlRHc2Jvc20
-  screen said: welcome log in to xpreshon non prod to continue to xpreshon-test. email address * can't log in to your account? continue don't have an account? sign up or continue with a passkey continue with google continue with facebook
-After retry -> SIGNED_IN
