@@ -1,0 +1,2 @@
+Second tab before sign out: SIGNED_IN
+Second tab after sign out (reloaded): LOGIN_REQUIRED
