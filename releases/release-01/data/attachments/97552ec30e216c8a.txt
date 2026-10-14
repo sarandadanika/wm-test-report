@@ -1,1 +1,0 @@
-25 s from opening the app to the signed-in shell

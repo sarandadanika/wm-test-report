@@ -1,5 +1,0 @@
-/api/auth/me calls in 20 s: 1
-URL changes in 20 s: 2
-https://test.xpreshon.unearth.ai/
-https://test.xpreshon.unearth.ai/login
-Screen said: sign in sign in sign in sign in sign in sign in

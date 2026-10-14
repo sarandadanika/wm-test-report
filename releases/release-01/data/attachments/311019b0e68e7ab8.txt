@@ -1,4 +1,0 @@
-While unreachable -> URL: https://dev-mb1cw8oxwhdemzzs.au.auth0.com/authorize?client_id=0grxJxiMTBENupSe2e7hThDa2TGsbosm&response_type=code&redirect_uri=https%3A%2F%2Ftest.xpreshon.unearth.ai&scope=openid%20profile%20email%20offline_access&response_mode=query&code_challenge=qL_6_3HED-m7pD4opC9nKG0AAItS0DFK-AKRu9cBB_k&code_challenge_method=S256&state=<redacted>&nonce=xzkAtfPVIXhKWb7YHLi53Q&audience=https%3A%2F%2Fapi.staging.unearth.ai%2Fapi%2Fdiscovery-test-api, page title: 'dev-mb1cw8oxwhdemzzs.au.auth0.com'
-  the IdP's own login page rendered anyway (block ineffective): false
-After retry -> SIGNED_IN
-Note: with the provider down the browser shows its own connection error — the app has no chance to show a message of its own; what matters is that a retry recovers.

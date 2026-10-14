@@ -1,0 +1,3 @@
+Status: 200
+Keys: [isLoggedIn, id, name, email]
+Password-like keys: []
