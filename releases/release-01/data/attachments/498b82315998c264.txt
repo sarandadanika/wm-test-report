@@ -1,0 +1,3 @@
+google -> accounts.google.com (as expected)
+facebook -> www.facebook.com (as expected)
+Microsoft option offered: false (known gap — UA-02-02 / finding F-02)
