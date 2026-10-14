@@ -1,6 +1,0 @@
-Genuine callback captured: https://test.xpreshon.unearth.ai/ with code (45 chars) and state (22 chars)
-tampered state -> state UNKNOWN, live session cookie false, landed on https://test.xpreshon.gateway.unearth.ai/?auth_error=1
-tampered code -> state UNKNOWN, live session cookie false, landed on https://test.xpreshon.gateway.unearth.ai/?auth_error=1
-missing state -> state LOGIN_REQUIRED, live session cookie false, landed on https://test.xpreshon.unearth.ai/login
-missing code -> state LOGIN_REQUIRED, live session cookie false, landed on https://test.xpreshon.unearth.ai/login
-replayed unchanged (code already used) -> state UNKNOWN, live session cookie false, landed on https://test.xpreshon.gateway.unearth.ai/?auth_error=1
