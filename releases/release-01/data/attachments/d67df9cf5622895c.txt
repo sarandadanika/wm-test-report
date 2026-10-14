@@ -1,4 +1,0 @@
-Requests carrying the password: 3
-  to the identity provider (dev-mb1cw8oxwhdemzzs.au.auth0.com): 2
-  to any other host: 1
-    https://test.xpreshon.unearth.ai/?code=TWcOh3936W7tIyJgHpikPe-5LG29w1gLoz0jxkmFhF0AR&state=zqyyJlV7PEN2cFSChmyOag

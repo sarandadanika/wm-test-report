@@ -1,0 +1,6 @@
+client_id: 0grxJxiMTBENupSe2e7hThDa2TGsbosm (the app's public SPA client)
+username: nobody.auth015.ab06e6c2@example.com (does not exist)
+HTTP 403
+error: unauthorized_client
+error_description: Grant type 'password' not allowed for the client.
+Verdict: refused before any credential was checked
