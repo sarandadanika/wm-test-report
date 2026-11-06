@@ -1,1 +1,0 @@
-No passkey prompt appeared — Auth0 may not have it enabled for this tenant, or the user has already declined it. The app redirected straight to the portal.

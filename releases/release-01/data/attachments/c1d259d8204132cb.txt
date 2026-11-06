@@ -1,9 +1,0 @@
-Duration: 23460 ms
-State: SIGNED_IN
-Feed visible: true
-Session cookie present: false
-Session cookie httpOnly: false
-Session cookie secure: false
-/api/auth/me contains email: true
-/api/auth/me status line: 200
-URL: https://test.xpreshon.unearth.ai/apps

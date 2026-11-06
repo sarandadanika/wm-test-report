@@ -1,0 +1,6 @@
+/api/auth/me before outage: 200
+/api/auth/me during outage: 503
+Requests intercepted: 1
+/api/auth/me after recovery: 200
+Session state after recovery: SIGNED_IN
+Session survived: true
