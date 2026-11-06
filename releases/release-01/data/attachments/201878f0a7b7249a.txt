@@ -1,0 +1,3 @@
+Refresh on the password step -> password step at https://dev-mb1cw8oxwhdemzzs.au.auth0.com/u/login/password?state=<redacted>
+Back -> identifier step at https://dev-mb1cw8oxwhdemzzs.au.auth0.com/u/login/identifier?state=<redacted>
+Sign-in completed afterwards -> SIGNED_IN

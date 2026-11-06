@@ -1,0 +1,4 @@
+State before: SIGNED_IN
+State after: LOGIN_REQUIRED
+URL: https://test.xpreshon.unearth.ai/login
+On login page: true

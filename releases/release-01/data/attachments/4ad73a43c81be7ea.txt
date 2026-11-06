@@ -1,0 +1,4 @@
+Unsaved-changes warning shown: true
+State after sign out: LOGIN_REQUIRED
+Console errors during sign out: 1
+(console not captured)
