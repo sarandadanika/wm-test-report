@@ -1,4 +1,0 @@
-While unreachable -> URL: https://dev-mb1cw8oxwhdemzzs.au.auth0.com/u/login/identifier?state=<redacted>, page title: 'Log in | Xpreshon-Test'
-  the IdP's own login page rendered anyway (block ineffective): true
-After retry -> SIGNED_IN
-Note: with the provider down the browser shows its own connection error — the app has no chance to show a message of its own; what matters is that a retry recovers.

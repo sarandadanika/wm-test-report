@@ -1,0 +1,4 @@
+While offline -> URL: https://test.xpreshon.gateway.unearth.ai/api/auth/login, page title: 'test.xpreshon.gateway.unearth.ai'
+  the IdP's own login page rendered anyway (offline ineffective): false
+After retry -> SIGNED_IN
+Note: with the network offline the browser shows its own connection error — the app has no chance to show a message of its own; what matters is that a retry recovers.
