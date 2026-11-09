@@ -1,0 +1,1 @@
+Two-tab refresh race only happens after the token expires (cookie xpreshon_session on test.xpreshon.gateway.unearth.ai, httpOnly=true, expires in 24.0 h); needs a dev short-lifetime override or a scheduled long run.
