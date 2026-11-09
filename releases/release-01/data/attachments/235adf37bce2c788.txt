@@ -1,0 +1,1 @@
+Safari (macOS/iOS) is not available on the Windows test machine - run on a Mac/iPhone.
