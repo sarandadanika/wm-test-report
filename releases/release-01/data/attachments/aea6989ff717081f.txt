@@ -1,3 +1,0 @@
-Session state: SIGNED_IN
-URL: https://test.xpreshon.unearth.ai/apps
-Sign-in completed: true

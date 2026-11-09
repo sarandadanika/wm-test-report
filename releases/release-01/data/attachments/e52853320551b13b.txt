@@ -1,3 +1,0 @@
-MFA challenge/enrollment shown: false
-Is enrollment (QR code): false
-Body excerpt: Almost there! We're preparing what you need…

@@ -1,5 +1,0 @@
-First browser state before second sign-in: SIGNED_IN
-First browser /api/auth/me before: 200
-First browser /api/auth/me after second browser activity: 200
-First browser state after: SIGNED_IN
-First browser session survived: true

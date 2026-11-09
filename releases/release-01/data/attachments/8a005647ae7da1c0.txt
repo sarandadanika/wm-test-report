@@ -1,4 +1,0 @@
-Passkey prompt appeared and was skipped: true
-Redirected back to app: true
-State: SIGNED_IN
-URL: https://test.xpreshon.unearth.ai/

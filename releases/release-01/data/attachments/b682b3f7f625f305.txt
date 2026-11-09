@@ -1,6 +1,0 @@
-Provider: facebook
-Reached provider: true
-After cancel → on IdP: true
-After cancel → on app: false
-Error visible: (none)
-URL: https://dev-mb1cw8oxwhdemzzs.au.auth0.com/u/login/identifier?state=<redacted>

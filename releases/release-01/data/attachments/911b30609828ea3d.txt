@@ -1,7 +1,0 @@
-first user shown in the header before the switch: true
-/api/auth/me named the first user before the switch: true
-second user shown in the header after the switch: true
-first user still shown in the header after the switch: false (the two names overlap — not checked)
-/api/auth/me names the second user after the switch: true
-/api/auth/me still names the first user after the switch: false
-/api/auth/me answers differ between the two users: true

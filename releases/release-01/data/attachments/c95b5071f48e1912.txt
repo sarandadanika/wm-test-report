@@ -1,2 +1,0 @@
-Providers top-to-bottom: [google, facebook]
-Email field y=588, last provider y=492
