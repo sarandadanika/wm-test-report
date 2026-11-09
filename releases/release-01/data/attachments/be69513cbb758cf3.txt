@@ -1,1 +1,0 @@
-No session cookie: GET /api/auth/me -> HTTP 200 {"isLoggedIn":false,"id":null,"name":null,"email":null} (status endpoint answers 200 isLoggedIn:false by design, no data); GET https://test.xpreshon.gateway.unearth.ai/api/data/api/search/corpora -> HTTP 401 {"error":"unauthenticated"}
