@@ -1,0 +1,1 @@
+Covered by AUTHF-025 (Pass): Google login with provider 2-step goes to Feed with provider MFA only.

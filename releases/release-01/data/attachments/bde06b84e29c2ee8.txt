@@ -1,0 +1,1 @@
+Cannot run: there is no MFA challenge/enrolment stage to act on - step 1 FAILED (MFA not enabled, bug #8094). Evidence: S1 screenshot.

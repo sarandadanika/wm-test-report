@@ -1,0 +1,1 @@
+Cannot run: no MFA factor can be enrolled or challenged while MFA is disabled on the tenant (bug #8094, Approved). Proof: AUTHF-026_S1 / AUTHF-029_S1 screenshots - password login goes straight to the Feed.
