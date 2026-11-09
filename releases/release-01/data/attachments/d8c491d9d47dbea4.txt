@@ -1,1 +1,0 @@
-Needs the session/access token to actually expire (cookie xpreshon_session on test.xpreshon.gateway.unearth.ai, httpOnly=true, expires in 24.0 h); not reachable in one test session - needs a short-lifetime dev override or a scheduled long run. Related evidence: 6-min soak (BUG-8780 retest) saw 12/12 /api/auth/me = 200, 0 x 401.

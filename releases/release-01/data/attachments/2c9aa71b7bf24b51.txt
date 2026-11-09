@@ -1,1 +1,0 @@
-Max refresh-token lifetime is 30 days (dev target 7 days); needs a dev override. cookie xpreshon_session on test.xpreshon.gateway.unearth.ai, httpOnly=true, expires in 24.0 h

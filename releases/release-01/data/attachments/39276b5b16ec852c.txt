@@ -1,1 +1,0 @@
-Idle refresh-token lifetime is 15 days (dev target 24h); cannot idle that long in a test run. cookie xpreshon_session on test.xpreshon.gateway.unearth.ai, httpOnly=true, expires in 24.0 h

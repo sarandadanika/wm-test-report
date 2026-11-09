@@ -1,1 +1,0 @@
-Silent refresh past the access-token lifetime (24 h) cannot be reached in one session.
