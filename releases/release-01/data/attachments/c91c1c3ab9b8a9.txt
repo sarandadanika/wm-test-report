@@ -1,1 +1,0 @@
-Facebook app is reachable again - re-run this case with a Facebook test account to cover steps 2-4.
