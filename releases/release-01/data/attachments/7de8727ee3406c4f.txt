@@ -1,1 +1,0 @@
-Not automated: saving an open FSP document after reconnect - the save-draft flow automation is currently broken (FLOW-005). Manual 1-minute check.
