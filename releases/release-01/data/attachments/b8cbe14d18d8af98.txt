@@ -1,0 +1,13 @@
+attempt 1: Wrong email or password
+attempt 2: Wrong email or password
+attempt 3: Wrong email or password
+attempt 4: Wrong email or password
+attempt 5: Wrong email or password
+attempt 6: Wrong email or password
+attempt 7: Wrong email or password
+attempt 8: Wrong email or password
+attempt 9: Wrong email or password
+attempt 10: Your account has been blocked after multiple consecutive login attempts
+
+Lockout observed: true after 10 attempt(s)
+NOTE: account danika@wildmouse.com is now blocked until the unblock email is actioned or an admin lifts it.
