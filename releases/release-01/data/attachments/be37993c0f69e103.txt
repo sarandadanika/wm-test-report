@@ -1,0 +1,7 @@
+Restore failed: Expected condition failed: waiting for com.wildmouse.xpreshon.ui.screens.LoginScreen$$Lambda$796/0x0000021b3a38e1c8@3bfead8d
+(tried for 20 seconds with 500 milliseconds interval)
+Build info: version: '4.52.0', revision: '5b37fd4 5b37fd4d98c08d6a43a0790417f91b8f6f32fb5c'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 157.0.8103.26, chrome: {chromedriverVersion: 157.0.8103.38 (a733b5afbb3b..., userDataDir: C:\Users\USER\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60813}, goog:processID: 22832, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60813/devtoo..., se:cdpVersion: 157.0.8103.26, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10...., webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 826c40ebce7749de4237c80b2af52b9d. Restore manually.
