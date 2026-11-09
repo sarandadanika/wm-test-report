@@ -1,2 +1,0 @@
-Temp password set: TempReset_1794234102638!
-Original password must be restored via another reset or Auth0 admin.

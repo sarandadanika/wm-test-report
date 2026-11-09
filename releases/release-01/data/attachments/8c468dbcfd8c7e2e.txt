@@ -1,0 +1,1 @@
+Not run: Google sign-in for saranda.danika@gmail.com needs that Google account's password, which is not configured for automation (only danika.saranda@gmail.com is). Provide USER_GOOGLE2_EMAIL/PASSWORD or run manually.
