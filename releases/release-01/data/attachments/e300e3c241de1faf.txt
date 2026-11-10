@@ -1,1 +1,0 @@
-There is no separate 'add establishment' form: an establishment is created only through the Approved Arrangement wizard (Establishment Name + ABN on its first screen), so an 'establishment with no AA' state cannot be produced from the UI.
