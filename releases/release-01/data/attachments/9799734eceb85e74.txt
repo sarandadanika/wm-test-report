@@ -1,0 +1,1 @@
+There is no delete / archive control on a row or in an opened AA, so a row cannot be removed from the UI.
