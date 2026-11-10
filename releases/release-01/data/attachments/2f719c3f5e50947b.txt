@@ -1,0 +1,1 @@
+{CHROME=ONBOARDING, panel open=true, cards 4, steps 4, wave emoji painted=true, layout problems none, EDGE=ONBOARDING, panel open=true, cards 4, steps 4, wave emoji painted=true, layout problems none, FIREFOX=ONBOARDING, panel open=true, cards 4, steps 4, wave emoji painted=true, layout problems none} | Safari: not available on Windows - run on macOS/iPad (Blocked)

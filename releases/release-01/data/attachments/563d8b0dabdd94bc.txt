@@ -1,0 +1,1 @@
+Needs an AI edit inside the generated document (highlight text in the canvas editor + accept the AI change) - not reliably automatable; run by hand. FSPD-026 checks 'Modified' moving after real saves.

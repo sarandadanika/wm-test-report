@@ -1,0 +1,1 @@
+{CHROME=dark toggle=true and back, panel open/close=true/true, EDGE=dark toggle=true and back, panel open/close=true/true, FIREFOX=dark toggle=true and back, panel open/close=true/true} | Safari: not available on Windows - run on macOS/iPad (Blocked)
