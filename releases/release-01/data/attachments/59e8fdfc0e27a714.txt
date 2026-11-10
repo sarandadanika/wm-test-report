@@ -1,1 +1,0 @@
-{CHROME=could not run - IllegalStateException: Theme toggle not found, EDGE=could not run - IllegalStateException: Theme toggle not found, FIREFOX=could not run - IllegalStateException: Theme toggle not found} | Safari: not available on Windows - run on macOS/iPad (Blocked)
