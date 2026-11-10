@@ -1,0 +1,1 @@
+An establishment is only created through the AA wizard, so 'an establishment with 0 AAs' cannot be produced from the UI (see FSPD-022 S2).
