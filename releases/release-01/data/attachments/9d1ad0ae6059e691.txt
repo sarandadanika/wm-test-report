@@ -1,0 +1,1 @@
+Google refuses sign-in from an automated browser ('This browser or app may not be secure'). Run in the tester's own Chrome (account chooser) - never type a Google password into automation.
