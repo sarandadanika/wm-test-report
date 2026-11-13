@@ -1,0 +1,1 @@
+Calls while the draft loaded: [GET 200 /api/data/api/forms/0db7f813-7b75-4b69-8f5f-985d44574b3c/values  resp application/json; charset=utf-8 6,077 B, GET 200 /api/data/api/forms/0db7f813-7b75-4b69-8f5f-985d44574b3c/values  resp application/json; charset=utf-8 6,077 B]

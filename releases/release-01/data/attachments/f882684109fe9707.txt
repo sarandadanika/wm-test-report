@@ -1,0 +1,1 @@
+'Analysing floor plan…' shown=true and cleared=true after 20 s; text that appeared: []

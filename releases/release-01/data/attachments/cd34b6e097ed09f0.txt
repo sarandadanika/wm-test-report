@@ -1,0 +1,22 @@
+toast 'Form saved successfully'=true; form POST [201]; attachment chunks [200, 200, 200]; complete [200, 200, 200]; formGuid cb02b29e-2de2-44ee-935d-c8bdb3501a4f
+upload calls:
+POST 200 /api/data/api/forms/cb02b29e-2de2-44ee-935d-c8bdb3501a4f/attachments/chunks  req multipart 5,395 B  resp application/json; charset=utf-8 261 B
+   request: attachmentId=bd8e976e-c0f9-437d-89d3-a9904b706f17
+   answer:  {"attachmentId":"bd8e976e-c0f9-437d-89d3-a9904b706f17","fileName":"floorplan1794549924414.jpg","chunkIndex":0,"blockId":"MDAwMDAwMA==","blobName":"cb02b29e-2de2-44ee-935d-c8bdb3501a4f/attachments/bd8e976e-c0f9-437d-89d3-a9904b706f17/floorplan1794549924414.jpg"}
+POST 200 /api/data/api/forms/cb02b29e-2de2-44ee-935d-c8bdb3501a4f/attachments/complete  req bytes 123 B  resp application/json; charset=utf-8 489 B
+   request: {"attachmentId":"bd8e976e-c0f9-437d-89d3-a9904b706f17","fileName":"floorplan1794549924414.jpg","blockIds":["MDAwMDAwMA=="]} ATTACHMENTS: "fileName":"floorplan1794549924414.jpg"
+   answer:  {"formGuid":"cb02b29e-2de2-44ee-935d-c8bdb3501a4f","attachmentId":"bd8e976e-c0f9-437d-89d3-a9904b706f17","fileName":"floorplan1794549924414.jpg","extension":"jpg","sizeInBytes":4905,"path":"cb02b29e-2de2-44ee-935d-c8bdb3501a4f/attachments/bd8e976e-c0f9-437d-89d3-a9904b706f17/floorplan1794549924414.j…
+POST 200 /api/data/api/forms/cb02b29e-2de2-44ee-935d-c8bdb3501a4f/attachments/chunks  req multipart 15,255 B  resp application/json; charset=utf-8 261 B
+   request: attachmentId=bd8e976e-c0f9-437d-89d3-a9904b706f17
+   answer:  {"attachmentId":"bd8e976e-c0f9-437d-89d3-a9904b706f17","fileName":"floorplan1794549924415.png","chunkIndex":0,"blockId":"MDAwMDAwMA==","blobName":"cb02b29e-2de2-44ee-935d-c8bdb3501a4f/attachments/bd8e976e-c0f9-437d-89d3-a9904b706f17/floorplan1794549924415.png"}
+POST 200 /api/data/api/forms/cb02b29e-2de2-44ee-935d-c8bdb3501a4f/attachments/complete  req bytes 123 B  resp application/json; charset=utf-8 490 B
+   request: {"attachmentId":"bd8e976e-c0f9-437d-89d3-a9904b706f17","fileName":"floorplan1794549924415.png","blockIds":["MDAwMDAwMA=="]} ATTACHMENTS: "fileName":"floorplan1794549924415.png"
+   answer:  {"formGuid":"cb02b29e-2de2-44ee-935d-c8bdb3501a4f","attachmentId":"bd8e976e-c0f9-437d-89d3-a9904b706f17","fileName":"floorplan1794549924415.png","extension":"png","sizeInBytes":14766,"path":"cb02b29e-2de2-44ee-935d-c8bdb3501a4f/attachments/bd8e976e-c0f9-437d-89d3-a9904b706f17/floorplan1794549924415.…
+POST 200 /api/data/api/forms/cb02b29e-2de2-44ee-935d-c8bdb3501a4f/attachments/chunks  req multipart 11,936 B  resp application/json; charset=utf-8 261 B
+   request: attachmentId=bd8e976e-c0f9-437d-89d3-a9904b706f17
+   answer:  {"attachmentId":"bd8e976e-c0f9-437d-89d3-a9904b706f17","fileName":"floorplan1794549924416.gif","chunkIndex":0,"blockId":"MDAwMDAwMA==","blobName":"cb02b29e-2de2-44ee-935d-c8bdb3501a4f/attachments/bd8e976e-c0f9-437d-89d3-a9904b706f17/floorplan1794549924416.gif"}
+POST 200 /api/data/api/forms/cb02b29e-2de2-44ee-935d-c8bdb3501a4f/attachments/complete  req bytes 123 B  resp application/json; charset=utf-8 490 B
+   request: {"attachmentId":"bd8e976e-c0f9-437d-89d3-a9904b706f17","fileName":"floorplan1794549924416.gif","blockIds":["MDAwMDAwMA=="]} ATTACHMENTS: "fileName":"floorplan1794549924416.gif"
+   answer:  {"formGuid":"cb02b29e-2de2-44ee-935d-c8bdb3501a4f","attachmentId":"bd8e976e-c0f9-437d-89d3-a9904b706f17","fileName":"floorplan1794549924416.gif","extension":"gif","sizeInBytes":11447,"path":"cb02b29e-2de2-44ee-935d-c8bdb3501a4f/attachments/bd8e976e-c0f9-437d-89d3-a9904b706f17/floorplan1794549924416.…
+FormGuid in every upload URL=true; AttachmentId in each chunk call and UniqueFileName in each complete call=true
+entries [{name floor-plan.jpg, size 4905, attachmentId bd8e976e-c0f9-437d-89d3-a9904b706f17, uniqueName floorplan1794549924414.jpg}, {name floor-plan.png, size 14766, attachmentId bd8e976e-c0f9-437d-89d3-a9904b706f17, uniqueName floorplan1794549924415.png}, {name floor-plan.gif, size 11447, attachmentId bd8e976e-c0f9-437d-89d3-a9904b706f17, uniqueName floorplan1794549924416.gif}]

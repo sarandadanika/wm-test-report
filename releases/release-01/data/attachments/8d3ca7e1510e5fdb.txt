@@ -1,0 +1,1 @@
+A real drag from File Explorer cannot be driven by WebDriver (it starts outside the browser). The browser's own 'open the dropped file' behaviour only happens for a real drop - run manually.
