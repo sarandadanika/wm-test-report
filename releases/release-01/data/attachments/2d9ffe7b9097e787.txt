@@ -1,0 +1,1 @@
+The analysis finished before 'Skip AI Extraction' could be clicked (analysis shown=true, 14 s) - the link is listed in step 2; clicking it needs a manual check. TAKEN - listed [analysis-b.png], POST /api/ask [200] (29,485 B sent)

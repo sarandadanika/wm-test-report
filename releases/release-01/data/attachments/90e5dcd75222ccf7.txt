@@ -1,0 +1,1 @@
+Unsupported file (.pdf) in each browser: {CHROME=REFUSED on the client (not listed, no request), inline message 'Unsupported file type: floor-plan.pdf' (disappeared by itself after about 7 s), EDGE=not reached, FIREFOX=not reached} | Safari: not available on Windows (not covered)

@@ -1,0 +1,1 @@
+Drag and drop cannot be driven by WebDriver in any browser (see FSPU-003) - run manually in Chrome, Edge and Firefox.

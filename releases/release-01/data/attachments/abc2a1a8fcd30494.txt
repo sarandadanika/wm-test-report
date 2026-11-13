@@ -1,1 +1,0 @@
-The browser's 'Leave site?' prompt on closing a tab is suppressed for automated sessions (WebDriver accepts beforeunload silently) - run manually.
