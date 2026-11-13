@@ -1,1 +1,0 @@
-No console error when the limit was hit.

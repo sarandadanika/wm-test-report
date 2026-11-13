@@ -1,1 +1,0 @@
-Limit message: inline message 'Maximum 5 files allowed. Skipped: count-6.jpg' (disappeared by itself after about 7 s)

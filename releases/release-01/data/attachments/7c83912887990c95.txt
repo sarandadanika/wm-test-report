@@ -1,0 +1,1 @@
+Next request after the removals carries: ATTACHMENTS: "mediaType":"image/png" (22,860 B) -> a removed file is still sent=false

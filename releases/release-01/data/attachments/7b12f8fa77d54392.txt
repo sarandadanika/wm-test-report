@@ -1,1 +1,0 @@
-The dropzone cannot be focused with the keyboard (step 1), so Enter / Space cannot be tried on it.
