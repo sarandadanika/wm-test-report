@@ -1,0 +1,6 @@
+'plan #1+2.jpg' -> stored as 'plan121794812873363.jpg'
+'plan ^(a)[b].jpg' -> stored as 'planab1794812873364.jpg'
+'plan's !@=~,x.jpg' -> stored as 'plansx1794812873365.jpg'
+'plan 100% & $5.jpg' -> stored as 'plan10051794812873366.jpg'
+'plÃ¡n Ã± Ã¼ Ã©.jpg' -> stored as 'pln1794812873367.jpg'
+-> original name kept for display=false; stored names free of special characters=true; stored names distinct=true
