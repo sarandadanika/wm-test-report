@@ -1,0 +1,1 @@
+A real drag from File Explorer cannot be driven by WebDriver (it starts outside the browser). A folder can only be dropped with a real mouse - run manually.

@@ -1,0 +1,1 @@
+The accessibility tree carries the full name, but the row is painted on the canvas - whether it is cut with an ellipsis is a visual check: see FSPU-014_S3_hover.png (bug #23037).

@@ -1,0 +1,1 @@
+The editor paints the document on the canvas. Text mentions 'floor plan'=false, names review-plan.jpg=false, <img> elements on the page: 0. Whether the image itself is in the document is judged from the DOCX in step 4.

@@ -1,0 +1,1 @@
+A real drag from File Explorer cannot be driven by WebDriver (it starts outside the browser). Scripted drop of two files (FLT-SEMANTICS dragenter:handled, dragover:handled, drop:handled) was ignored by the app (listed []) - run manually.
