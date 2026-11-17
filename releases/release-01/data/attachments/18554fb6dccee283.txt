@@ -1,1 +1,0 @@
-A real drag from File Explorer cannot be driven by WebDriver (it starts outside the browser). A scripted drop event was tried instead (FLT-SEMANTICS dragenter:handled, dragover:handled, drop:handled): the app did not list the file ([]), which only shows that Flutter ignores untrusted drag events - run manually.

@@ -1,1 +1,0 @@
-'Analysing floor plan…' shown=true and cleared=true after 9 s; text that appeared: [Team & Roles, Review & Submit]
